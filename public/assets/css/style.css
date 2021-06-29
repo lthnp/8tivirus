@@ -1,0 +1,463 @@
+#content{
+	 /*overflow-x: hidden;*/
+    font-size: 14px;
+    font-family: 'Prompt';
+    line-height: 1.4;
+    background-color: #ffffff;
+}
+.box-one{
+	float: left;
+}
+.img-curve{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%; 
+}
+.button-curve:hover{
+	background: #000;
+	color: #fff;
+}
+.box-right{
+	width: 100%;
+	height: 150px;
+	float: right;
+	margin-top: 40px;
+	font-size: 20px;
+}
+.button-curve{
+	width: auto;
+	height: 50px;
+	text-align: center; 
+	border-radius: 50px;
+	background: #fff;
+	border-color: #000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.box-two{
+	float: left;
+	margin-top: 20px;
+}
+.img-logo{
+	height: 100%;
+	width: 100%;
+}
+.text-title{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	padding-left: 0px;
+	margin-left: 0px;
+	font-size: 20px
+}
+.text-head{
+	/*font-size: 30px;*/
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.text-span{
+	font-size: 18px;
+}
+.box-three{
+	float: left;
+}
+.img-icon{
+	height: 10%;
+	width: 10%;
+}
+.museum-icon{
+	width: 40px;
+	height: 40px;
+	background:#000;
+	border-radius: 50%;
+	z-index: 2px;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -40px;
+	margin-bottom: 10px;	
+}
+.museum-icon img{
+	margin: 6px;
+}
+.text-line{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: -150px;
+	white-space: nowrap;
+	text-align: center;
+}
+.contact{
+	float: right;
+	font-size: 20px;
+	color: #000;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+.contact img{
+	width: 10%;
+	height: 10%;
+	margin-left: 3px;
+}
+#footer{
+	float: left;
+	width: 100%;
+	height: 150px;
+	margin-top: 30px;
+	background: #000;
+}
+.support{
+	font-size: 16px;
+	color: #fff;
+	text-align-last: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	padding: 20px 0px; 
+}
+.support img{
+	margin-left: 20px;
+} 
+.text-center{
+	font-size: 30px;
+	text-align-last: center;
+	margin: 10px 0px;
+
+}
+.nav-menu{
+	text-align-last: center;
+	margin-bottom: 20px;
+}
+.nav-menu a:hover{
+	text-decoration: underline;
+}
+.nav-menu a, .first-box a, .second-box a, .third-box a{
+	color: #000;
+	text-decoration: none;
+}
+ .box-curve{
+ 	width: auto;
+	height: 30px;
+ 	padding: 5px;
+	font-size: 16px;
+	text-align: center; 
+	color: #fff;
+	margin: 30px;
+ }
+ .box-curve a{
+ 	color: #fff;
+	text-decoration: none;
+ }
+ .box-curve:hover{
+ 	border-radius: 50px;
+ 	border: 2px solid #fff;	
+ 	color: #fff;
+ }
+ .box-hover{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000;
+}
+
+.box-hover:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-curve {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000;
+  border-radius: 50%
+}
+
+.box-hover:hover .overlay-curve {
+  opacity: 1;
+}
+.circle{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.museum-icon-big{
+	width: 40px;
+	height: 40px;
+	background:#000;
+	border-radius: 50%;
+	z-index: 2px;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -40px;
+	margin-bottom: 40px;
+}
+.museum-icon-big img{
+	margin: 6px;
+
+}
+.text-span-center{
+	text-align-last: center;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+.text-span-center-small{
+	text-align-last: center;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.circle-bullet{
+	width: 20px;
+	height: 20px;
+	background: #000;
+	float: left;
+	border-radius: 50%;
+	margin-top: 12px;
+	margin-left: 28px;
+	z-index: 3;
+	position:absolute;
+}
+.text-left{
+	text-align-last: left;
+	font-size: 20px;
+}
+.img-icon-small{
+	width: 50px;
+	height: 50px;
+	margin-left: 100px;
+	margin-top: 10px;
+
+}
+.text-span-small{
+	margin-left: 100px;
+	font-size: 20px;
+	margin-top: 20px;
+
+}
+.text-center-right{
+	font-size: 30px;
+	text-align-last: center;
+	
+	margin-top: 10px;
+
+}
+
+
+[class*="col-"] {
+  width: 100%;
+}
+
+ @media only screen and (min-width: 600px) {
+  /* For tablets: */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+	  .box-one{
+		margin-top: 200px;
+	}
+	.img-curve{
+		height: 30%;
+		width: 30%;
+		border-radius: 50%;
+	}
+	.box-right{
+		float: right;
+		width: 60%;
+		
+	}
+	.box-right h2{
+		font-size: 35px;
+	}
+	.box-inside{
+		margin-top: 30px;
+	}
+	.img-icon{
+		width: 50px;
+		height: 50px;
+	}
+	.button-curve{
+		width: 250px;
+	    height: 80px;
+	    font-size: 25px;
+	    margin-bottom: 30px;
+	}
+	.img-logo{
+		height: 30%;
+		width: 30%;
+	}
+	.text-title{
+		font-size: 40px;
+	}
+	.museum-icon{
+		width: 40px;
+		height: 40px;
+		background:#000;
+		border-radius: 50%;
+		z-index: 2px;
+		position: absolute;
+		margin-left: 200px;
+		margin-top: -40px;
+		margin-bottom: 10px;
+		/*background-image: url("assets/images/museum.png");*/
+		/*background: url('assets/images/museum.png');*/
+	}
+	/*.museum-icon img{
+	  margin: 1px;
+	}*/
+	.text-line{
+		font-size: 16px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: -150px;
+		white-space: nowrap;
+		text-align: center;
+	}
+	.swiper-slide{
+		margin-bottom: 20px;
+	}
+	.swiper-slide img {
+    	width: 70%;
+    	border-radius: 50%;
+
+	}
+	.sec-more {
+	    padding-top: 8%;
+	    padding-bottom: 8%;
+	}
+	.bg-sponser {
+	    text-align: center;
+	    padding-top: 3%;
+	}
+	.txtmore {
+	    font-size: 24px;
+	}
+	.swiper-wrapper {
+	    padding-bottom: 60px;
+	}
+	.swiper-pagination .swiper-pagination-bullet {
+	    width: 60px;
+	    height: 5px;
+	    border-radius: 0%;
+	    /* border-style: solid;
+	    border-color: black; */
+	}
+	.swiper-pagination .swiper-pagination-bullet-active {
+	    width: 60px;
+	    height: 5px;
+	    background-color: black;
+	    border-radius: 0%;
+	}
+	.museum-icon img{
+		margin-top: 10px;
+	}
+	.contact{
+		font-size: 20px;
+		margin-top: 180px;
+	}
+	.contact img{
+		width: 10%;
+		height: 10%;
+	}
+	.support{
+		margin-left: 130px;
+		margin-top: 30px;
+		padding: 20px 0px; 
+	}
+	.support img{
+		margin-left: 20px;
+	} 
+	.text-center{
+		font-size: 30px;
+		text-align-last: center;
+	}
+	.box-curve{
+		width: 100%;
+		height: 50px;
+		font-size: 16px;
+		margin-left: -5px; 
+	}
+	.nav-menu a{
+		font-size: 25px;
+		margin-left: 20px;
+	}
+	.overlay {
+	  width: 30%;
+	}
+	.circle{
+		width: 70%;
+		height: 70%;
+	}
+	.overlay-curve {
+	  width: 22%;
+	}
+	.museum-icon-big{
+		margin-left: 180px;
+	}
+	.text-span-center{
+		font-size: 20px;
+		margin: 10px 0px;
+	}
+	.text-span-center-small{
+		font-size: 14px;
+		margin: 10px 0px;
+	}
+	.left-box{
+		width: 30%;
+		float: left;
+	}
+	.first-box{
+		width: 100%;
+		float:left;
+	}
+	.second-box{
+		width: 100%;
+		float:left;
+		margin-top: 20px;
+	}
+	.third-box{
+		width: 100%;
+		float:left;
+	}
+	.circle-bullet{
+		margin-top: 22px;
+		margin-left: 65px;
+		z-index: 3;
+		position:absolute;
+	}
+	.left-boxes{
+		width: 50%;
+		float: left;
+	}
+	.right-boxes{
+		width: 50%;
+		float: left;
+	}
+
+}
+
