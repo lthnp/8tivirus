@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.detail-person');
+});
+
+Route::prefix('cms')->group(function (){
+    Route::get('/import', [App\Http\Controllers\ImportController::class, 'index'])->name('import');
+    Route::post('import', [App\Http\Controllers\ImportController::class, 'import'])->name('import.select');
+    Route::post('import/submit', [App\Http\Controllers\ImportController::class, 'importSubmit'])->name('import.submit');
 });
