@@ -32,7 +32,6 @@ class ProjectController extends Controller
                 },
             ])
             ->first();
-        dd($list);
         return view('pages.test-details', compact('list'));
     }
 

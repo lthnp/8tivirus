@@ -31,7 +31,7 @@ class ProjectImport implements ToModel, WithHeadingRow
             'dev_img' => 'required',
             'design_img' => 'required',
             'portrait_vdo_url' => 'required',
-            'showreel_url' => 'required',
+//            'showreel_url' => 'required',
             'demo_url' => 'required',
             'category' => 'required',
             'type' => 'required',
