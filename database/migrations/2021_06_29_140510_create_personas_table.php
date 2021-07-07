@@ -16,6 +16,7 @@ class CreatePersonasTable extends Migration
         Schema::create('personas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('project_id')->constrained();
+            $table->string('name');
             $table->string('job');
             $table->tinyInteger('age');
             $table->string('background');

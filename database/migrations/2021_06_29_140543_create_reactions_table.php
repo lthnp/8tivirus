@@ -16,8 +16,11 @@ class CreateReactionsTable extends Migration
         Schema::create('reactions', function (Blueprint $table) {
             $table->id();
             $table->foreignId('project_id')->constrained();
+            $table->tinyInteger('react')->comment('1 design, 2 dev, 3 both, 4 so so');
             $table->string('ip');
-            $table->text('message');
+            $table->string('browser');
+            $table->string('device');
+            $table->string('os');
             $table->timestamps();
         });
     }

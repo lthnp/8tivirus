@@ -34,10 +34,10 @@ class ProjectDetailImport implements ToModel, WithHeadingRow
             'func3_stop' => 'required',
             'bs_code' => 'required',
             'bs_code_description' => 'required',
-            'bs_code_ref' => 'required',
             'bs_design' => 'required',
             'bs_design_description' => 'required',
-            'bs_design_ref' => 'required'
+            'git' => 'required',
+            'pinterest' => 'required',
         ];
     }
 }

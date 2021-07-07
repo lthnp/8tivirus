@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .menu {
+  width: 0;
+  height: 0;
+  background: white;
+  border: none;
+  outline: none;
+  float: right;
+  cursor: pointer;
+}
+
+.close-overlay {
+  color: white;
+  font-size: 500%;
+  font-weight: 80%;
+}
+
+.over-lay button {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 1%;
+}
+
+.over-lay {
+  position: absolute;
+  right: 0;
+  top: -100%;
+  padding: 5em;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.6s ease-in-out;
+  z-index: 888;
+}
+.over-lay .cross {
+  float: right;
+  cursor: pointer;
+}
+.over-lay .menu {
+  width: auto;
+  height: auto;
+  background: none;
+  list-style-type: none;
+}
+.over-lay .menu__link {
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 300%;
+  line-height: 250%;
+}
+.over-lay ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5%;
+  margin-right: 55%;
+}
+.over-lay ul li {
+  list-style: none;
+  opacity: 0;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+.over-lay ul li a {
+  font-size: 20%;
+  color: white;
+  transition: all 0.3s;
+  text-align: center;
+}
+.over-lay ul li a:hover {
+  color: Cornsilk;
+}
+
+.show {
+  transition: all 0.6s ease-in-out;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.show li:nth-of-type(1) {
+  animation: show-list 0.8s forwards 1s ease-out;
+}
+.show li:nth-of-type(2) {
+  animation: show-list 0.8s forwards 1.2s ease-out;
+}
+.show li:nth-of-type(3) {
+  animation: show-list 0.8s forwards 1.4s ease-out;
+}
+.show li:nth-of-type(4) {
+  animation: show-list 0.8s forwards 1.6s ease-out;
+}
+.show li:nth-of-type(5) {
+  animation: show-list 0.8s forwards 1.8s ease-out;
+}
+.show li:nth-of-type(6) {
+  animation: show-list 0.8s forwards 2s ease-out;
+}
+
+@keyframes show-list {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu_detail {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  width: auto;
+  height: auto;
+}
+
+.menu-1, .menu-2 {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 400%;
+  transition: all 0.4s ease;
+}
+.menu-1:hover, .menu-2:hover {
+  opacity: 0.5;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: auto;
+  background: none;
+  margin-left: 3%;
+}
+
+.pxscreen {
+  position: absolute;
+  width: 625px;
+  height: 352px;
+  left: 33%;
+  top: 30%;
+  background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
+  border-radius: 20px;
+  transform: rotate(90deg);
+}
+
+.hand {
+  z-index: 99;
+  position: absolute;
+  left: 0%;
+  top: 5%;
+}
+
+.flatscreen {
+  position: absolute;
+  width: 355px;
+  height: 232px;
+  left: 40%;
+  top: 60%;
+  background: linear-gradient(180deg, #2A2A2A 0%, rgba(42, 42, 42, 0) 100%);
+  border-radius: 25px;
+  transform: rotate(-180deg);
+}
+
+.icon_zone:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/txt.png") no-repeat top center;
+  right: -15%;
+  bottom: -12px;
+}
+
+.icon_zone {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 10px 10px;
+  height: auto;
+}
+
+.txt {
+  color: #FEBDCD;
+  z-index: 2;
+}
+
+.icon_zone:before {
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.icon_zone_line:before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 4px;
+  background: linear-gradient(45deg, #dc9125 0%, #8bbd2e 65%, #02a858 100%);
+  left: 548px;
+  bottom: 35px;
+}
+
+.icon_zone_line {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 10px 10px;
+  height: auto;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+.icon_zone_page2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/txt.png") no-repeat top center;
+  right: 35%;
+  bottom: -12px;
+  z-index: -2;
+}
+
+.icon_zone_page2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 10px 10px;
+  height: auto;
+}
+
+.icon_zone_page2:before {
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.sec-4project {
+  padding-bottom: 100px;
+}
+
+.txt-4staff {
+  padding: 350px 0px 0px 0px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FEBDCD;
+  text-transform: uppercase;
+}
+
+.photo-pad {
+  padding: 0px 0px 0px 31px;
+}
+
+.photo-pad2 {
+  padding: 103px 0px 0px 0px;
+}
+
+.photo-pad3 {
+  padding: 0px 0px 0px 0px;
+}
+
+.txt-staff {
+  font-family: "IBM Plex Sans Thai Medium";
+  padding: 15px 0px 0px 14px;
+}
+
+.photomoile :hover {
+  transform: scale(1.1);
+}
+
+.txt-lookingfor {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  left: 42%;
+  top: 25%;
+  font-family: "IBM Plex Sans Thai Medium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FEBDCD;
+  /* identical to box height */
+  letter-spacing: 0.15em;
+}
+
+.icon-pad, .icon-pad2, .icon-pad3 {
+  margin-top: 2%;
+}
+
+.icon-pad {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-family: "IBM Plex Sans Thai Thin";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  left: 30%;
+  top: 35%;
+}
+
+.icon-pad2 {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-family: "IBM Plex Sans Thai Thin";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  left: 45%;
+  top: 35%;
+}
+
+.icon-pad3 {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-family: "IBM Plex Sans Thai Thin";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  left: 60%;
+  top: 35%;
+}
+
+.photo-filter {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: auto;
+  height: auto;
+}
+
+.pxscreen_p4 {
+  position: absolute;
+  width: 521px;
+  height: 263px;
+  top: 25%;
+  left: -40%;
+  background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
+  border-radius: 20px;
+  transform: rotate(90deg);
+}

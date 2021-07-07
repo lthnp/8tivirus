@@ -27,10 +27,10 @@ class CreateProjectDetailsTable extends Migration
             $table->integer('func3_stop');
             $table->text('bs_code');
             $table->string('bs_code_description');
-            $table->string('bs_code_ref');
             $table->string('bs_design');
             $table->string('bs_design_description');
-            $table->string('bs_design_ref');
+            $table->string('git');
+            $table->string('pinterest');
             $table->timestamps();
         });
     }

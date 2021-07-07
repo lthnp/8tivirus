@@ -1,0 +1,58 @@
+$bg-01: #000000;
+$bg-02: #000000;
+$bg-03: #000000;
+$bg-04: #000000;
+ 
+ @mixin md {
+   @media screen and (max-width: 1920) {
+     @content;
+   }
+ }
+ 
+ @mixin sm {
+   @media screen and (max-width: 767px) {
+     @content;
+   }
+ }
+
+ .bg-menu,.bg-logo{
+   height: 40rem;
+ }
+
+ footer img {
+    opacity:0.4;
+    transition: all 0.4s ease;
+
+  
+  p {
+    color: $bg-03;
+  }
+  
+  &:hover {
+    opacity:1;
+  }
+}
+
+.text_menu{
+    p{
+        padding: 2%;
+    }
+}
+
+.dropbtn , .dropbtn-2{
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  overflow: auto;
+}
+
+.dropdown-content p {
+  text-decoration: none;
+  display: block;
+}
+
+.show {display:block;}

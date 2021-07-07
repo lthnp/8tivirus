@@ -30,6 +30,7 @@ class CreateStudentsTable extends Migration
             $table->string('img_art');
             $table->string('art_url');
             $table->tinyInteger('role')->comment('1 dev, 2 design, 3 both');
+            $table->string('interview_url');
             $table->timestamps();
         });
     }

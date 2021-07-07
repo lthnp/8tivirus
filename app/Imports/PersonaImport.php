@@ -22,6 +22,7 @@ class PersonaImport implements ToModel, WithHeadingRow
     {
         return [
             'code' => 'required',
+            'name' => 'required',
             'job' => 'required',
             'age' => 'required',
             'background' => 'required',

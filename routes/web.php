@@ -13,9 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.detail-person');
+
+Route::middleware(['coming.soon'])->group(function (){
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 });
+
+
+Route::prefix('test')->group(function (){
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+    Route::get('/supporter', [App\Http\Controllers\HomeController::class, 'supporter'])->name('supporter');
+    Route::get('/project', [App\Http\Controllers\ProjectController::class, 'index'])->name('project.index');
+    Route::get('/project/{code}', [App\Http\Controllers\ProjectController::class, 'show'])->name('project.show');
+    Route::post('/project/{code}/comment', [App\Http\Controllers\ProjectController::class, 'comment'])->name('comment.store');
+    Route::post('/project/{code}/react', [App\Http\Controllers\ReactionController::class, 'store'])->name('react.store');
+    Route::get('/project/{id}/react', [App\Http\Controllers\ReactionController::class, 'destroy'])->name('react.destroy');
+});
+
 
 Route::prefix('cms')->group(function (){
     Route::get('/import', [App\Http\Controllers\ImportController::class, 'index'])->name('import');

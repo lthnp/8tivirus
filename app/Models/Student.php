@@ -26,6 +26,7 @@ class Student extends Model
         'img',
         'img_art',
         'art_url',
-        'role'
+        'role',
+        'interview_url',
     ];
 }

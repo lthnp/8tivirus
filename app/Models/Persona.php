@@ -13,6 +13,7 @@ class Persona extends Model
 
     protected $fillable = [
         'project_id',
+        'name',
         'job',
         'age',
         'background',
@@ -24,6 +25,6 @@ class Persona extends Model
         'identity3_score',
         'identity4',
         'identity4_score',
-        'img'
+        'img',
     ];
 }

@@ -24,9 +24,9 @@ class ProjectDetail extends Model
         'func3_stop',
         'bs_code',
         'bs_code_description',
-        'bs_code_ref',
         'bs_design',
         'bs_design_description',
-        'bs_design_ref'
+        'git',
+        'pinterest',
     ];
 }

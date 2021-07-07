@@ -16,8 +16,11 @@ class CreateCommentsTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('project_id')->constrained();
+            $table->text('message');
             $table->string('ip');
-            $table->tinyInteger('react')->comment('1 design, 2 dev, 3 both, 4 so so');
+            $table->string('browser');
+            $table->string('device');
+            $table->string('os');
             $table->timestamps();
         });
     }

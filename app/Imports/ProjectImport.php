@@ -30,9 +30,11 @@ class ProjectImport implements ToModel, WithHeadingRow
             'img' => 'required',
             'dev_img' => 'required',
             'design_img' => 'required',
+            'portrait_vdo_url' => 'required',
             'showreel_url' => 'required',
             'demo_url' => 'required',
-            'interview_url' => 'required'
+            'category' => 'required',
+            'type' => 'required',
         ];
     }
 }

@@ -13,7 +13,10 @@ class Reaction extends Model
 
     protected $fillable = [
         'project_id',
+        'react',
         'ip',
-        'react'
+        'browser',
+        'device',
+        'os',
     ];
 }

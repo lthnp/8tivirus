@@ -13,7 +13,10 @@ class Comment extends Model
 
     protected $fillable = [
         'project_id',
+        'message',
         'ip',
-        'message'
+        'browser',
+        'device',
+        'os'
     ];
 }

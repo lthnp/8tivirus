@@ -35,7 +35,8 @@ class StudentImport implements ToModel, WithHeadingRow
             'img' => 'required',
             'img_art' => 'required',
             'art_url' => 'required',
-            'role' => 'required'
+            'role' => 'required',
+            'interview_url' => 'required'
         ];
     }
 }
