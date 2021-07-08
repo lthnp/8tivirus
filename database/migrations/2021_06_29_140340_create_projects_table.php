@@ -28,7 +28,7 @@ class CreateProjectsTable extends Migration
             $table->string('showreel_url');
             $table->string('demo_url');
             $table->tinyInteger('category');
-            $table->tinyInteger('type');
+            $table->tinyInteger('type')->comment('1 dev, 2 design, 3 both');
             $table->timestamps();
         });
     }

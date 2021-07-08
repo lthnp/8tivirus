@@ -36,21 +36,43 @@ class Project extends Model
         return $demo_url;
     }
 
+    // Project Detail
+    public function detail()
+    {
+        return $this->hasOne('App\Models\ProjectDetail');
+    }
+    public function techs()
+    {
+        return $this->hasMany('App\Models\ProjectTech');
+    }
+    public function screenshots()
+    {
+        return $this->hasMany('App\Models\Screenshot');
+    }
+    public function persona()
+    {
+        return $this->hasOne('App\Models\Persona');
+    }
+
+    // Student in Project
+    public function students()
+    {
+        return $this->hasMany('App\Models\Student');
+    }
+
+    // Feedback from Visitor
     public function reactionAll()
     {
         return $this->hasMany('App\Models\Reaction');
     }
-
     public function reaction()
     {
         return $this->hasOne('App\Models\Reaction');
     }
-
     public function commentAll()
     {
         return $this->hasMany('App\Models\Comment');
     }
-
     public function comment()
     {
         return $this->hasOne('App\Models\Comment');

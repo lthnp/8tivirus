@@ -22,7 +22,7 @@ class StudentImport implements ToModel, WithHeadingRow
     {
         return [
             'code' => 'required',
-            'student_id' => 'required',
+            'sid' => 'required',
             'firstname' => 'required',
             'lastname' => 'required',
             'nickname' => 'required',

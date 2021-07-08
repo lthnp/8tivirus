@@ -13,7 +13,7 @@ class Student extends Model
 
     protected $fillable = [
         'project_id',
-        'student_id',
+        'sid',
         'firstname',
         'lastname',
         'nickname',
@@ -29,4 +29,9 @@ class Student extends Model
         'role',
         'interview_url',
     ];
+
+    public function project()
+    {
+        return $this->hasOne('App\Models\Project', 'id', 'project_id');
+    }
 }

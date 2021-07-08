@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <p class="py-3"></p>
+    <p class="py-2"></p>
     <a href="{{ route('project.index') }}" class="btn btn-outline-secondary">Back</a>
 
     <div class="py-2">
@@ -10,7 +10,7 @@
                 <input type="number" name="project_id" value="{{ $list->id }}" hidden>
                 <textarea name="message" cols="30" rows="10" class="form-control"></textarea>
                 @if($errors->has('message'))<p class="text-danger pt-3">{{ $errors->first('message') }}</p>@endif
-                <button type="submit" class="btn btn-primary">Comment</button>
+                <button type="submit" class="btn btn-warning">Comment</button>
             </form>
         @else
             <h2>Already Commented.</h2>
@@ -23,16 +23,16 @@
             <input type="number" name="project_id" value="{{ $list->id }}" hidden>
             @if(empty($list->reaction))
                 <input type="number" name="react" value="0" onchange="reactSubmit()" hidden>
-                <button id="react-design" type="submit" class="btn btn-outline-primary">design</button>
-                <button id="react-code" type="submit" class="btn btn-outline-primary">code</button>
-                <button id="react-both" type="submit" class="btn btn-outline-primary">both</button>
-                <button id="react-so" type="submit" class="btn btn-outline-primary">so so</button>
+                <button id="react-design" type="submit" class="btn btn-outline-danger">design</button>
+                <button id="react-code" type="submit" class="btn btn-outline-danger">code</button>
+                <button id="react-both" type="submit" class="btn btn-outline-danger">both</button>
+                <button id="react-so" type="submit" class="btn btn-outline-danger">so so</button>
             @else
                 <input type="number" name="react" value="{{ $list->reaction->react }}" onchange="reactSubmit()" hidden>
-                <button id="react-design" type="submit" class="btn btn-{{ $list->reaction->react == 1 ? '' : 'outline-'}}primary">design</button>
-                <button id="react-code" type="submit" class="btn btn-{{ $list->reaction->react == 2 ? '' : 'outline-'}}primary">code</button>
-                <button id="react-both" type="submit" class="btn btn-{{ $list->reaction->react == 3 ? '' : 'outline-'}}primary">both</button>
-                <button id="react-so" type="submit" class="btn btn-{{ $list->reaction->react == 4 ? '' : 'outline-'}}primary">so so</button>
+                <button id="react-design" type="submit" class="btn btn-{{ $list->reaction->react == 1 ? '' : 'outline-'}}danger">design</button>
+                <button id="react-code" type="submit" class="btn btn-{{ $list->reaction->react == 2 ? '' : 'outline-'}}danger">code</button>
+                <button id="react-both" type="submit" class="btn btn-{{ $list->reaction->react == 3 ? '' : 'outline-'}}danger">both</button>
+                <button id="react-so" type="submit" class="btn btn-{{ $list->reaction->react == 4 ? '' : 'outline-'}}danger">so so</button>
             @endif
 
         </form>

@@ -9,7 +9,7 @@ class ProjectTech extends Model
 {
     use HasFactory;
 
-    protected $table = 'project_techs';
+    protected $table = 'project_teches';
 
     protected $fillable = [
         'project_id',

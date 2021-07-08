@@ -14,14 +14,21 @@ class ProjectController extends Controller
     }
 
     public function index(){
-        $lists = Project::all();
-//        dd($this->data);
+        $lists = Project::with([
+            'detail',
+            'students',
+        ])->get();
         return view('pages.test', compact('lists'));
     }
 
     public function show($code){
         $list = Project::where(['code' => $code])
             ->with([
+                'detail',
+                'techs',
+                'screenshots',
+                'persona',
+                'students',
                 'reaction' => function($query){
                     $query->where($this->data);
                     $query->first();
@@ -43,10 +50,9 @@ class ProjectController extends Controller
         $req['browser'] = $this->data['browser'];
         $req['device'] = $this->data['device'];
         $req['os'] = $this->data['os'];
-
         if(Comment::all()->count()){
             $comment = Comment::where([
-                'project_id' => $req['peoject_id'],
+                'project_id' => $req['project_id'],
                 'ip' => $req['ip'],
                 'browser' => $req['browser'],
                 'device' => $req['device'],
