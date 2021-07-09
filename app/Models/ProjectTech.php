@@ -16,4 +16,20 @@ class ProjectTech extends Model
         'type',
         'tech'
     ];
+
+    protected $appends = [
+        'type_name'
+    ];
+
+    public function getTypeNameAttribute()
+    {
+        if($this->type == 1){
+            $name = 'Front-End';
+        } else if ($this->type == 2) {
+            $name = 'Back-End';
+        } else {
+            $name = 'Database';
+        }
+        return $name;
+    }
 }

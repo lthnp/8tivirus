@@ -55,18 +55,78 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Code</th>
-                                <th>Nickname</th>
-                                <th>Name TH</th>
+                                @if($type == 'project')
+                                    <th>Code</th>
+                                    <th>Nickname</th>
+                                    <th>Name TH</th>
+                                @elseif($type == 'project detail')
+                                    <th>Code</th>
+                                    <th>Func 1</th>
+                                    <th>Func 2</th>
+                                    <th>Func 3</th>
+                                @elseif($type == 'project tech')
+                                    <th>Code</th>
+                                    <th>Type</th>
+                                    <th>Tech</th>
+                                @elseif($type == 'persona')
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Job</th>
+                                    <th>Age</th>
+                                @elseif($type == 'screenshot')
+                                    <th>Code</th>
+                                    <th>Img</th>
+                                @elseif($type == 'student')
+                                    <th>Code</th>
+                                    <th>SID</th>
+                                    <th>Firstname TH</th>
+                                    <th>Lastname TH</th>
+                                    <th>Nickname TH</th>
+                                @elseif($type == 'free resource')
+                                    <th>SID</th>
+                                    <th>Title</th>
+                                    <th>Img</th>
+                                    <th>Download URL</th>
+                                @endif
                             </tr>
                             </thead>
                             <tbody>
                             @foreach($lists as $key=>$list)
                                 <tr>
                                     <td>{{ $key+1 }}</td>
-                                    <td>{{ $list['code'] }}</td>
-                                    <td>{{ $list['nickname'] }}</td>
-                                    <td>{{ $list['name_th'] }}</td>
+                                    @if($type == 'project')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['nickname'] }}</td>
+                                        <td>{{ $list['name_th'] }}</td>
+                                    @elseif($type == 'project detail')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['func1'] }}</td>
+                                        <td>{{ $list['func2'] }}</td>
+                                        <td>{{ $list['func3'] }}</td>
+                                    @elseif($type == 'project tech')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['type'] }}</td>
+                                        <td>{{ $list['tech'] }}</td>
+                                    @elseif($type == 'persona')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['name'] }}</td>
+                                        <td>{{ $list['job'] }}</td>
+                                        <td>{{ $list['age'] }}</td>
+                                    @elseif($type == 'screenshot')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['img'] }}</td>
+                                    @elseif($type == 'student')
+                                        <td>{{ $list['code'] }}</td>
+                                        <td>{{ $list['sid'] }}</td>
+                                        <td>{{ $list['firstname_th'] }}</td>
+                                        <td>{{ $list['lastname_th'] }}</td>
+                                        <td>{{ $list['nickname_th'] }}</td>
+                                    @elseif($type == 'free resource')
+                                        <td>{{ $list['sid'] }}</td>
+                                        <td>{{ $list['title'] }}</td>
+                                        <td>{{ $list['img'] }}</td>
+                                        <td>{{ $list['download_url'] }}</td>
+                                    @endif
                                 </tr>
                             @endforeach
 
@@ -91,6 +151,7 @@
                             <option value="persona">persona</option>
                             <option value="screenshot">screenshot</option>
                             <option value="student">student</option>
+                            <option value="free resource">free resource</option>
                         </select>
                         <h5 class="mt-3">file</h5>
                         <input type="file" name="file" class="form-control @error('file') is-invalid @enderror">

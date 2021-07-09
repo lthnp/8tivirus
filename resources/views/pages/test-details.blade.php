@@ -3,6 +3,22 @@
     <p class="py-2"></p>
     <a href="{{ route('project.index') }}" class="btn btn-outline-secondary">Back</a>
 
+    <p>{{ $list->detail->func1 }}</p>
+    @forelse($list->techs as $tech)
+        <p>{{ $tech->type_name }} | {{ $tech->tech }}</p>
+    @empty
+    @endforelse
+    @forelse($list->screenshots as $screenshot)
+        <img src="{{ asset($screenshot->img) }}" alt="{{ $list->nickname }}" width="50" height="auto">
+        <p></p>
+    @empty
+    @endforelse
+    <p>{{ $list->persona->background }}</p>
+    @forelse($list->students as $student)
+        <p>{{ $student->firstname_th }} {{ $student->lastname_th }}</p>
+    @empty
+    @endforelse
+
     <div class="py-2">
         @if(empty($list->comment))
             <form action="{{ route('comment.store', $list->id) }}" method="post" onsubmit="return confirm('ยันยันความคิดเห็น')">

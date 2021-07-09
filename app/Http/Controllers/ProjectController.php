@@ -15,7 +15,6 @@ class ProjectController extends Controller
 
     public function index(){
         $lists = Project::with([
-            'detail',
             'students',
         ])->get();
         return view('pages.test', compact('lists'));

@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\FreeResourceImport;
 use App\Imports\PersonaImport;
 use App\Imports\ProjectDetailImport;
 use App\Imports\ProjectImport;
 use App\Imports\ProjectTechImport;
 use App\Imports\ScreenshotImport;
 use App\Imports\StudentImport;
+use App\Models\FreeResource;
 use App\Models\Persona;
 use App\Models\Project;
 use App\Models\ProjectDetail;
@@ -56,6 +58,9 @@ class ImportController extends Controller
             if($type == 'student'){
                 $listsImport = Excel::toArray(new StudentImport, request()->file('file'));
             }
+            if($type == 'free resource'){
+                $listsImport = Excel::toArray(new FreeResourceImport, request()->file('file'));
+            }
 
             $lists = $listsImport[0];
 
@@ -71,38 +76,52 @@ class ImportController extends Controller
         ]);
         $type = $request->input('type');
         $lists = json_decode($request->lists, true);
-        $import = $request->import;
 
         $model = '';
+        $element = '';
         $success = [];
         $fail = [];
 
-        foreach ($lists as $list){
-            if($type == 'project') {
-                $model = new Project();
-            }
-            if($type == 'project detail'){
-                $model = new ProjectDetail();
-            }
-            if($type == 'project tech'){
-                $model = new ProjectTech();
-            }
-            if($type == 'persona'){
-                $model = new Persona();
-            }
-            if($type == 'screenshot'){
-                $model = new Screenshot();
-            }
-            if($type == 'student'){
-                $model = new Student();
-            }
+        if($type == 'project') {
+            $model = new Project();
+        }
+        if($type == 'project detail'){
+            $model = new ProjectDetail();
+        }
+        if($type == 'project tech'){
+            $model = new ProjectTech();
+        }
+        if($type == 'persona'){
+            $model = new Persona();
+        }
+        if($type == 'screenshot'){
+            $model = new Screenshot();
+        }
+        if($type == 'student'){
+            $model = new Student();
+        }
+        if($type == 'free resource') {
+            $model = new FreeResource();
+        }
 
-            $element = Project::where('code', $list['code'])->first(['id']);
+        foreach ($lists as $list){
+            if($type == 'free resource'){
+                $student = Student::where('sid', $list['sid'])->first(['id']);
+                if(!empty($student)){
+                    $input = $list;
+                    $input['student_id'] = $student->id;
+                    $model::create($input);
+                    array_push($success, $list);
+                } else {
+                    array_push($fail, $list);
+                }
+            } else {
+                $element = Project::where('code', $list['code'])->first(['id']);
+            }
 
             if (!empty($element)){
                 $input = $list;
                 if($type != 'project') {
-                    dd($element);
                     $input['project_id'] = $element->id;
                     $model::create($input);
                     array_push($success, $list);
@@ -115,7 +134,9 @@ class ImportController extends Controller
                     $model::create($input);
                     array_push($success, $list);
                 } else {
-                    array_push($fail, $list);
+                    if($type != 'free resource'){
+                        array_push($fail, $list);
+                    }
                 }
             }
         }

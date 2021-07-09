@@ -25,7 +25,7 @@ class CreateProjectsTable extends Migration
             $table->string('dev_img');
             $table->string('design_img');
             $table->string('portrait_vdo_url');
-            $table->string('showreel_url');
+            $table->string('showreel_url')->nullable();
             $table->string('demo_url');
             $table->tinyInteger('category');
             $table->tinyInteger('type')->comment('1 dev, 2 design, 3 both');
