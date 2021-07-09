@@ -16,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['coming.soon'])->group(function (){
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+
+    Route::prefix('projects')->group(function (){
+//        Route::get('/', [App\Http\Controllers\ProjectController::class, 'index'])->name('project.index');
+        Route::get('/{code}', [App\Http\Controllers\ProjectController::class, 'show'])->name('project.show');
+        // COMMENT
+        Route::post('/{code}/comment', [App\Http\Controllers\ProjectController::class, 'comment'])->name('comment.store');
+        Route::post('/{code}/no-comment', [App\Http\Controllers\ProjectController::class, 'noComment'])->name('no.comment');
+        // REACT
+        Route::post('/{code}/react', [App\Http\Controllers\ReactionController::class, 'store'])->name('react.store');
+        Route::get('/{id}/react', [App\Http\Controllers\ReactionController::class, 'destroy'])->name('react.destroy');
+    });
 });
 
 
@@ -27,6 +38,7 @@ Route::prefix('test')->group(function (){
         Route::get('/{code}', [App\Http\Controllers\ProjectController::class, 'show'])->name('project.show');
         // COMMENT
         Route::post('/{code}/comment', [App\Http\Controllers\ProjectController::class, 'comment'])->name('comment.store');
+        Route::post('/{code}/no-comment', [App\Http\Controllers\ProjectController::class, 'noComment'])->name('no.comment');
         // REACT
         Route::post('/{code}/react', [App\Http\Controllers\ReactionController::class, 'store'])->name('react.store');
         Route::get('/{id}/react', [App\Http\Controllers\ReactionController::class, 'destroy'])->name('react.destroy');

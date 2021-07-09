@@ -32,7 +32,7 @@ class CommentRequest extends FormRequest
     public function messages()
     {
         return [
-            'message.required' => 'โปรดกรอกความคิดเห็นก่อนกดยืนยัน',
+            'message.required' => 'โปรดกรอกข้อความก่อนกดยืนยัน',
         ];
     }
 }

@@ -15,6 +15,7 @@ class Project extends Model
         'nickname',
         'description',
         'advisor',
+        'logo',
         'img',
         'dev_img',
         'design_img',
@@ -33,7 +34,7 @@ class Project extends Model
     {
         $demo_url = $this->demo_url;
         $demo_url_code = explode("/", $demo_url);
-        return $demo_url;
+        return $demo_url_code[3];
     }
 
     // Project Detail
@@ -76,6 +77,10 @@ class Project extends Model
     public function comment()
     {
         return $this->hasOne('App\Models\Comment');
+    }
+    public function noComment()
+    {
+        return $this->hasOne('App\Models\LogNoComment');
     }
 
 }

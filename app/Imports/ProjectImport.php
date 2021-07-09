@@ -27,6 +27,7 @@ class ProjectImport implements ToModel, WithHeadingRow
             'nickname' => 'required',
             'description' => 'required',
             'advisor' => 'required',
+            'logo' => 'required',
             'img' => 'required',
             'dev_img' => 'required',
             'design_img' => 'required',

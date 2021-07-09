@@ -30,6 +30,30 @@ class Student extends Model
         'interview_url',
     ];
 
+    protected $appends = [
+        'role_name',
+        'interview_url_code'
+    ];
+
+    public function getRoleNAmeAttribute()
+    {
+        if($this->role == 1){
+            $role_name = 'Developer';
+        } else if ($this->role == 2){
+            $role_name = 'Designer';
+        } else {
+            $role_name = 'Developer & Designer';
+        }
+        return $role_name;
+    }
+
+    public function getInterviewUrlCodeAttribute()
+    {
+        $url = $this->interview_url;
+        $code = explode("/", $url);
+        return $code[3];
+    }
+
     public function project()
     {
         return $this->hasOne('App\Models\Project', 'id', 'project_id');

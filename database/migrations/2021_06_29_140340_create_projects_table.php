@@ -21,6 +21,7 @@ class CreateProjectsTable extends Migration
             $table->string('nickname');
             $table->string('description');
             $table->string('advisor');
+            $table->string('logo');
             $table->string('img');
             $table->string('dev_img');
             $table->string('design_img');

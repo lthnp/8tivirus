@@ -7,7 +7,7 @@
 
     <title>coming-soon</title>
 
-    <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous" />
@@ -18,7 +18,10 @@
     <style>
         @font-face {
             font-family: 'IBM Plex Sans Thai';
-            src: url('assets/fonts/IBM-Plex-Sans-Thai/IBMPlexSansThai-Regular.ttf');
+            src: url({{ asset('assets/fonts/IBM-Plex-Sans-Thai/IBMPlexSansThai-Regular.ttf') }});
+        }
+        * {
+            font-family: 'IBM Plex Sans Thai';
         }
     </style>
 </head>

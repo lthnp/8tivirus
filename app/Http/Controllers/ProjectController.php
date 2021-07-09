@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CommentRequest;
 use App\Models\Comment;
+use App\Models\LogNoComment;
 use App\Models\Project;
+use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
@@ -38,7 +40,12 @@ class ProjectController extends Controller
                 },
             ])
             ->first();
-        return view('pages.test-details', compact('list'));
+        if(!empty($list->react)){
+            $react = 1;
+        } else {
+            $react = 0;
+        }
+        return view('pages.project-details', compact('list', 'react'));
     }
 
     public function comment(CommentRequest $request){
@@ -63,9 +70,35 @@ class ProjectController extends Controller
 
         if(empty($comment)){
             Comment::create($req);
-            return redirect()->back()->with('success', '');
+            return redirect(url()->previous().'#react');
         } else {
-            return redirect()->back();
+            return redirect(url()->previous().'#comment-form');
+        }
+    }
+
+    public function noComment($code){
+        $req['project_id'] = $code;
+        $req['ip'] = $this->data['ip'];
+        $req['browser'] = $this->data['browser'];
+        $req['device'] = $this->data['device'];
+        $req['os'] = $this->data['os'];
+        if(LogNoComment::all()->count()){
+            $comment = LogNoComment::where([
+                'project_id' => $req['project_id'],
+                'ip' => $req['ip'],
+                'browser' => $req['browser'],
+                'device' => $req['device'],
+                'os' => $req['os'],
+            ])->first();
+        } else {
+            $comment = '';
+        }
+
+        if(empty($comment)){
+            LogNoComment::create($req);
+            return redirect(url()->previous().'#react');
+        } else {
+            return redirect(url()->previous().'#react');
         }
     }
 

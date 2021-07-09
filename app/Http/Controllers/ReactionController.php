@@ -36,9 +36,11 @@ class ReactionController extends Controller
 
         if(empty($reaction)){
             Reaction::create($req);
+            return redirect(url()->previous().'#react')->with('react', 2);
             return redirect()->back()->with('react', 2);
         } else if($req['react'] != $reaction->react) {
             Reaction::find($reaction->id)->update($req);
+            return redirect(url()->previous().'#react')->with('react', 1);
             return redirect()->back()->with('react', 1);
         } else {
             return redirect()->route('react.destroy', $reaction->id);
@@ -47,6 +49,6 @@ class ReactionController extends Controller
 
     public function destroy($id){
         $list = Reaction::find($id)->delete();
-        return redirect()->back();
+        return redirect(url()->previous().'#react');
     }
 }
