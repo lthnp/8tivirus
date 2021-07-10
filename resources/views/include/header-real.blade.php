@@ -1,13 +1,9 @@
-<link rel="shortcut icon" href="{{asset('assets/favicon/favicon.ico')}}" type="image/x-icon">
-<link rel="icon" href="{{asset('assets/favicon/favicon.ico')}}" type="image/x-icon">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
 
 
-<link rel="stylesheet" href="{{ asset('assets/fonts/stylesheet.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/scroll.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/plugins/prism/prism-default.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">

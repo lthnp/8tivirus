@@ -11,8 +11,9 @@ use DB;
 
 class FreeResourceController extends Controller
 {
-    public function index(){
-        $fonts = FreeResource::all(['id', 'title', 'img', 'download_url']);
+    public function index(Request $request){
+        $p = $request->get('p', 'font');
+        $fonts = FreeResource::with(['student'])->get();
         $bgs = [
             [
                 'title' => 'something',
@@ -24,12 +25,11 @@ class FreeResourceController extends Controller
                 'download_url' => 'path'
             ]
         ];
-        return view('pages.free-resource', compact('fonts', 'bgs'));
+        return view('pages.free-resource', compact('fonts', 'bgs', 'p'));
     }
 
-    public function getDownload(){
-        $freeResource = FreeResource::all();
-        $file = public_path().'/'.$freeResource[0]->download_url;
+    public function getDownload(Request $request){
+        $file = public_path().'/'.$request->get('url');
         return Response::download($file);
     }
 }

@@ -19,14 +19,23 @@
 </section>
 
 <section id=content>
+    @include('include.menu')
     <div class="bg container">
         <div class="row">
 
             <div class="icon_zone">
-                <div class="txt">
+                <div class="txt w-100">
                     <h2>21 PROJECTS</h2>
                 </div>
             </div>
+
+            <a href="{{ route('index') }}">
+                <div class="txt-back">
+                    <img src="{{ asset('assets/images/back.png') }}">
+                    BACK TO HOME PAGE
+                    <div class="line-gradient-back"></div>
+                </div>
+            </a>
 
             @include('include.bubble')
 

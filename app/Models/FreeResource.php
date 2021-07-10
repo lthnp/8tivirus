@@ -17,4 +17,9 @@ class FreeResource extends Model
         'img',
         'download_url'
     ];
+
+    public function student()
+    {
+        return $this->hasOne('App\Models\Student', 'id', 'student_id');
+    }
 }

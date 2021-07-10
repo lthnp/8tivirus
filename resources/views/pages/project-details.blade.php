@@ -13,13 +13,20 @@
 
 <body>
     <main class="wrapper bg">
-        <a href="{{ route('project.index') }}">
-        <section>
-            <div class="box-lodo-main">
-                <img class="img-logo-small" src="https://www.ict.su.ac.th/func/&amp;tivirus/assets/images/logo.png">
+        <div>
+            @include('include.menu')
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <a href="{{ route('project.index') }}">
+                    <div class="txt-back">
+                        <img src="{{ asset('assets/images/back.png') }}">
+                        BACK TO PROJECTS LIST
+                        <div class="line-gradient-back"></div>
+                    </div>
+                </a>
             </div>
-        </section>
-        </a>
+        </div>
 
         @include('include.bubble')
 
@@ -29,7 +36,7 @@
                     <div class="col col-lg-2">
                         <img width="130" height="130" class="rounded-circle" src="{{ asset($list->logo) }}" alt="{{ $list->nickname }}">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 w-100">
                         <div class="box-name">
                             <div class="arrow-ani">
                                 <div class="name-txt-h">
@@ -57,7 +64,7 @@
                     <div class="col col-lg-2 overflow-hidden">
                         @include('include.tech')
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 w-100">
                         <div class="display-block overflow-hidden">
                             <div class="box-name">
                                 <div class="video-tutoral">
@@ -65,11 +72,11 @@
                                             src="https://www.youtube.com/embed/{{ $list->showreel_url_code }}"
                                             title="YouTube video player" frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            id="demo_vdo" allowfullscreen></iframe>
+                                            allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="txt-tec">ความสามารถ</div>
+                        <div class="txt-tec mt-4">ความสามารถ</div>
                         <div class="display-block overflow-hidden">
                             <div class="w-25 float-left">
                                 <div class="pb-4">
@@ -134,7 +141,7 @@
                     <div class="col col-lg-2">
                         <div class="txt-tec">อาจารย์ที่ปรึกษา :</div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 w-100">
                         <div class="txt-teacher">{{ $list->advisor }}</div>
                     </div>
                 </div>

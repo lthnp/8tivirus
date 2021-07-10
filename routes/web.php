@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['coming.soon'])->prefix('')->group(function (){
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-    Route::get('/contacts', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+    Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
     Route::get('/insider', [App\Http\Controllers\HomeController::class, 'insider'])->name('insider');
+    Route::get('/looking-for', [App\Http\Controllers\HomeController::class, 'lookingFor'])->name('looking');
 
     Route::prefix('projects')->group(function (){
         Route::get('/', [App\Http\Controllers\ProjectController::class, 'index'])->name('project.index');
@@ -29,25 +30,39 @@ Route::middleware(['coming.soon'])->prefix('')->group(function (){
         Route::post('/{code}/react', [App\Http\Controllers\ReactionController::class, 'store'])->name('react.store');
         Route::get('/{id}/react', [App\Http\Controllers\ReactionController::class, 'destroy'])->name('react.destroy');
     });
-});
-
-
-Route::prefix('test')->group(function (){
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-    Route::get('/contacts', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
-    Route::get('/insider', [App\Http\Controllers\HomeController::class, 'insider'])->name('insider');
 
     Route::prefix('defenders')->group(function (){
         Route::get('/', [App\Http\Controllers\StudentController::class, 'index'])->name('defender.index');
         Route::get('/{sid}-{nickname}', [App\Http\Controllers\StudentController::class, 'show'])->name('defender.show');
     });
 
+    Route::prefix('looking-for')->group(function (){
+        Route::get('/', [App\Http\Controllers\LookingController::class, 'index'])->name('looking.index');
+    });
+
     Route::prefix('free-resource')->group(function (){
         Route::get('/', [App\Http\Controllers\FreeResourceController::class, 'index'])->name('resource.index');
         Route::get('/download', [App\Http\Controllers\FreeResourceController::class, 'getDownload'])->name('resource.download');
     });
-
 });
+
+
+//Route::prefix('test')->group(function (){
+//    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+//    Route::get('/contacts', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+//    Route::get('/insider', [App\Http\Controllers\HomeController::class, 'insider'])->name('insider');
+//
+//    Route::prefix('defenders')->group(function (){
+//        Route::get('/', [App\Http\Controllers\StudentController::class, 'index'])->name('defender.index');
+//        Route::get('/{sid}-{nickname}', [App\Http\Controllers\StudentController::class, 'show'])->name('defender.show');
+//    });
+//
+//    Route::prefix('free-resource')->group(function (){
+//        Route::get('/', [App\Http\Controllers\FreeResourceController::class, 'index'])->name('resource.index');
+//        Route::get('/download', [App\Http\Controllers\FreeResourceController::class, 'getDownload'])->name('resource.download');
+//    });
+//
+//});
 
 
 //Route::prefix('cms')->group(function (){

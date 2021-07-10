@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
 
     <title>{{ count($lists) }} Defenders — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
 
@@ -15,10 +16,10 @@
 <body>
 
 <section id="header">
-    @include('include.menu')
 </section>
 
 <section id=content>
+    @include('include.menu')
     <div class="bg container">
         <div class="row">
 
@@ -30,6 +31,13 @@
 
             <div class="text-subtitle">Many Skill, Different and Creative</div>
 
+            <a href="{{ route('index') }}">
+                <div class="txt-back">
+                    <img src="{{ asset('assets/images/back.png') }}">
+                    BACK TO HOME PAGE
+                    <div class="line-gradient-back"></div>
+                </div>
+            </a>
             @include('include.bubble')
 
             <div class="container">

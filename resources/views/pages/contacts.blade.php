@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
 
     <title>Contacts — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
     @include('include.header')
@@ -18,6 +19,7 @@
 </section>
 
 <section id=content>
+    @include('include.menu')
     <div class="bg container">
 
         <div class="row">
@@ -60,17 +62,17 @@
 
                     <div class="col-sm">
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#14 - extract</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/extract/">ICTSUWEB#14 - extract</a></div>
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#13 - SHORTCUT 13.5</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/shortcut/">ICTSUWEB#13 - SHORTCUT 13.5</a></div>
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#12 - Comeraam 12.4</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/2018/comeraam/">ICTSUWEB#12 - Comeraam 12.4</a></div>
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#11 - Ultra-Line 11.3</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/2017/portfolio/new_index.php">ICTSUWEB#11 - Ultra-Line 11.3</a></div>
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#10 - OATHLON 10.2</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/2016/">ICTSUWEB#10 - OATHLON 10.2</a></div>
 
-                        <div class="txt-span-center-small"><a href="">ICTSUWEB#09 - SURAROUND 9.1</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/2015/">ICTSUWEB#09 - SURAROUND 9.1</a></div>
 
                     </div>
 

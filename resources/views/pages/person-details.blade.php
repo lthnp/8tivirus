@@ -4,8 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
 
-    <title>DetailPerson</title>
+    <title>{{ $list->nickname }} {{ $list->firstname_th }} — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
     @include('include.header')
     @include('include.header-song')
 </head>
@@ -13,10 +14,10 @@
 <body>
 
 <section id="header">
-@include('include.menu')
 </section>
 
 <section id=content>
+    @include('include.menu')
     <div class="bg container">
         <div class="row">
 
@@ -25,6 +26,14 @@
                     <h2>{{ $list->firstname }} {{ $list->lastname }} ({{ $list->nickname }})</h2>
                 </div>
             </div>
+
+            <a href="{{ route('defender.index') }}">
+                <div class="txt-back">
+                    <img src="{{ asset('assets/images/back.png') }}">
+                    BACK TO DEFENDERS LIST
+                    <div class="line-gradient-back"></div>
+                </div>
+            </a>
 
             @include('include.bubble')
 
@@ -86,14 +95,45 @@
                     </div>
                 </div>
             </div>
-
+            @if(count($list->resources))
+                <div class="container">
+                    <div class="row w-100">
+                        <div class="col">
+                            <div class="txt-span">FREE RESOURCES</div>
+                        </div>
+                        <div class="col text-right pt-5">
+{{--                            <a href="{{ route('resource.index') }}">--}}
+{{--                                <div class="txt-right" style="position: relative; z-index: 5 !important;">VIEW ALL--}}
+{{--                                    <div class="line-gradient"></div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
+                        </div>
+                    </div>
+                    @foreach($list->resources as $resource)
+                        <div class="row w-100">
+                            <div class="col box-left">
+                                <img class="img-curve img-fluid img-zoom" src="{{ asset($resource->img) }}">
+                            </div>
+                            <div class="col pt-5 box-right">
+                                <div class="box-mg">
+                                    <div class="text-spans">HUATO FONT</div>
+                                    <div class="text-spans">Font by {{ $list->firstname }} {{ $list->lastname }}</div>
+                                </div>
+                                <a href="{{ route('resource.download') }}?url={{ $resource->download_url }}">
+                                    <button class="button-curve">DOWNLOAD FONT</button>
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
 
             <div class="container">
                 <div class="row">
                     <div class="box-left col-sm">
                         <div class="txt-span">MORE DEFENDERS FROM &TIVIRUS</div>
                         <a href="{{ route('defender.index') }}">
-                            <div class="txt-right" style="position: relative; z-index: 5 !important;">VIEW ALL
+                            <div class="txt-right text-right" style="position: relative; z-index: 5 !important;">VIEW ALL
                                 <div class="line-gradient"></div>
                             </div>
                         </a>
