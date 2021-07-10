@@ -6,7 +6,7 @@ body{
  	width: 100%;
  	height: 100%;
  	background-color: #2A2A2A;
- 	font-family: 'ibm_plex_sans_thai_loopedRg';
+ 	font-family: 'db_adman_xregular';
  	margin: 0px;
  	padding: 0px;
  	letter-spacing: 2px;
@@ -17,11 +17,11 @@ body{
  	height: 100%;
  	margin: 0;
     padding: 0;
- 	font-size: 14px;
+ 	font-size: 18px;
     line-height: 1.4;
     background-color: #2A2A2A;
     color: #fff;
-    font-family: 'ibm_plex_sans_thai_loopedRg';
+    font-family: 'db_adman_xregular';
 
  }
 
@@ -50,7 +50,7 @@ body{
     position: absolute;
     width: 50%;
     height: 36%;
-    background: url(../images/txt.png)no-repeat top center;
+    background: url('../images/txt.png') no-repeat top center;
     /* right: 378px; */
     right: 130px;
     bottom: 7px;
@@ -102,7 +102,7 @@ body{
     /* font-family: IBM Plex Sans; */
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.045em;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
@@ -112,7 +112,7 @@ body{
 .txt-showcase {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.045em;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
@@ -142,7 +142,7 @@ body{
 }
 
 .txt-web {
-    font-size: 15px;
+    font-size: 19px;
     text-align: center;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.6);
@@ -166,7 +166,7 @@ body{
 	/*text-align-last: center;*/
 }
 .text-span-center{
-	font-size: 24px;
+	font-size: 28px;
 	margin: 20px;
 	text-align: left;
 	position: relative;
@@ -176,7 +176,7 @@ body{
 	margin-left: 10px;
 }
 .text-span-center-small{
-	font-size: 18px;
+	font-size: 22px;
 	margin: 20px;
 	text-align: left;
 	position: relative;
@@ -273,7 +273,7 @@ body{
 }
 .txt-span{
 	color: #EA396B;
-	font-size: 18px;
+	font-size: 22px;
 	margin-left: 30px;
 	margin-top: 40px;
 }
@@ -287,7 +287,7 @@ body{
 .text-span{
 	margin-top: 20px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 24px;
 	margin-left: 30px;
 	position: relative;
 	z-index: 2;
@@ -313,7 +313,7 @@ body{
 .text-spans{
 	margin-top: 10px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 24px;
 	margin-left: 25px;
 	position: relative;
 	z-index: 2;
@@ -374,7 +374,7 @@ body{
 	float: right;
 	margin-top: 5px;
 	margin-right: 20px;
-	font-size: 18px;
+	font-size: 22px;
 	color: #fff;
 }
 .line-gradient{
@@ -400,7 +400,7 @@ body{
 .text-subtitle{
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 22px;
 	margin-bottom: 20px;
 	position: relative;
 	z-index: 2;
@@ -471,7 +471,7 @@ body{
   }
   .under-txt{
     margin-top: 370px;
-    font-size: 20px;
+    font-size: 24px;
   }
   /*all project*/
 
@@ -513,12 +513,12 @@ body{
 
 }
 .texts-title-span{
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: bolder;
 
 }
 .texts-span{
-	font-size: 24px;
+	font-size: 28px;
 
 }
 
@@ -1002,7 +1002,7 @@ body{
 
 	.txt-under{
     margin-top: 280px;
-    font-size: 20px;
+    font-size: 24px;
 	}
 	/*all project*/
 	.txt-unders {
@@ -1010,11 +1010,11 @@ body{
     margin-top: 250px;
 	}
 	.texts-title-span{
-		font-size: 24px;
+		font-size: 28px;
 
 	}
 	.texts-span{
-		font-size: 12px;
+		font-size: 16px;
 
 	}
   .text-span{
@@ -1059,7 +1059,7 @@ body{
   }
   .under-txt{
     margin-top: 370px;
-    font-size: 20px;
+    font-size: 24px;
   }*/
 
 
@@ -1091,7 +1091,7 @@ body{
   }
   .txt-under{
     margin-top: 350px;
-    font-size: 20px;
+    font-size: 24px;
   }
   .tran-curves{
   width: 300px;
@@ -1159,7 +1159,7 @@ body{
         /* font-family: IBM Plex Sans; */
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.045em;
         text-align: center;
         color: rgba(255, 255, 255, 0.8);
@@ -1168,7 +1168,7 @@ body{
     .txt-showcase {
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.045em;
         text-align: center;
         color: rgba(255, 255, 255, 0.8);
@@ -1192,7 +1192,7 @@ body{
         padding-right: 23px;
     }
     .txt-web {
-        font-size: 15px;
+        font-size: 19px;
         text-align: center;
         padding-top: 20px;
         color: rgba(255, 255, 255, 0.6);

@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'ibm_plex_sans_thai_loopedbold';
+    font-family: "ibm_plex_sans_thai_loopedbold";
     src: url('ibmplexsansthailooped-bold-webfont.woff2') format('woff2'),
          url('ibmplexsansthailooped-bold-webfont.woff') format('woff');
     font-weight: normal;
@@ -14,7 +14,7 @@
 
 
 @font-face {
-    font-family: 'ibm_plex_sans_thai_loopedRg';
+    font-family: "ibm_plex_sans_thai_loopedRg";
     src: url('ibmplexsansthailooped-regular-webfont.woff2') format('woff2'),
          url('ibmplexsansthailooped-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -26,7 +26,7 @@
 
 
 @font-face {
-    font-family: 'db_adman_xbold';
+    font-family: "db_adman_xbold";
     src: url('db_adman_x_bd_v3.2.1-webfont.woff2') format('woff2'),
          url('db_adman_x_bd_v3.2.1-webfont.woff') format('woff');
     font-weight: normal;
@@ -38,7 +38,7 @@
 
 
 @font-face {
-    font-family: 'db_adman_xregular';
+    font-family: "db_adman_xregular";
     src: url('db_adman_x_v3.2.1-webfont.woff2') format('woff2'),
          url('db_adman_x_v3.2.1-webfont.woff') format('woff');
     font-weight: normal;
@@ -50,7 +50,7 @@
 
 
 @font-face {
-    font-family: 'db_heaventbold_it';
+    font-family: "db_heaventbold_it";
     src: url('db_heavent_bd_it_v3.2.1-webfont.woff2') format('woff2'),
          url('db_heavent_bd_it_v3.2.1-webfont.woff') format('woff');
     font-weight: normal;
@@ -62,7 +62,7 @@
 
 
 @font-face {
-    font-family: 'db_heaventmed_it';
+    font-family: "db_heaventmed_it";
     src: url('db_heavent_med_it_v3.2.1-webfont.woff2') format('woff2'),
          url('db_heavent_med_it_v3.2.1-webfont.woff') format('woff');
     font-weight: normal;
@@ -74,7 +74,7 @@
 
 
 @font-face {
-    font-family: 'db_heaventregular';
+    font-family: "db_heaventregular";
     src: url('db_heavent_v3.2.1-webfont.woff2') format('woff2'),
          url('db_heavent_v3.2.1-webfont.woff') format('woff');
     font-weight: normal;

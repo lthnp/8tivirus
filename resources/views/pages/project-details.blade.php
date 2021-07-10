@@ -6,22 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
     <title>{{ $list->nickname }} {{ $list->name_th }} by {{ $list->students[0]->firstname.' '.$list->students[0]->lastname }}{{ count($list->students) > 1 ? ', '.$list->students[1]->firstname.' '.$list->students[1]->lastname : '' }}{{ count($list->students) > 2 ? ', '.$list->students[2]->firstname.' '.$list->students[2]->lastname : '' }} — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
-
-
-    <link rel="stylesheet" href="{{ asset('assets/fonts/stylesheet.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/scroll.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/plugins/prism/prism-default.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" crossorigin="anonymous"></script>
-
+    @include('include.header-real')
 </head>
 
 <body>

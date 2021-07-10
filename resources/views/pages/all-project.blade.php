@@ -6,20 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
 
-    <title>AllProject</title>
-
-    <link rel="stylesheet" href="{{asset('assets/fonts/stylesheet.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>21 Projects — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
+    @include('include.header-song')
 
 </head>
 
@@ -67,14 +55,13 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="nav-menu col-sm">
-                        <a href="?category=0" class="{{ $category == 0 ? 'active' : '' }}">All Project (21)  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; </a>
-                        <a href="?category=1" class="{{ $category == 1 ? 'active' : '' }}">Life-Quality Improvements (3)</a>
-                        <a href="?category=4" class="{{ $category == 4 ? 'active' : '' }}">Supporting Businesses in Growing (10)</a>
-                        <a href="?category=3" class="{{ $category == 3 ? 'active' : '' }}">Creative Media Supporting <br>Digital Education (5)</a>
-                        <a href="?category=2" class="{{ $category == 2 ? 'active' : '' }}">Digital Technology Improves <br>Well-Being (3)</a>
-
-
+                    <div class="nav-menu">
+                        <a href="?category=0" class="col-3 {{ $category == 0 ? 'active' : '' }}">All Project (21)</a>
+                        <a href="?category=1" class="col-3 {{ $category == 1 ? 'active' : '' }}">Life-Quality Improvements (3)</a>
+                        <a href="?category=4" class="col-4 {{ $category == 4 ? 'active' : '' }}">Supporting Businesses in Growing (10)</a>
+                        <a href="?category=3" class="col-3 {{ $category == 3 ? 'active' : '' }}">Creative Media Supporting <br>Digital Education (5)</a>
+                        <a href="?category=2" class="col-3 {{ $category == 2 ? 'active' : '' }}">Digital Technology Improves <br>Well-Being (3)</a>
+                        <div class="col-4"></div>
                     </div>
                 </div>
             </div>

@@ -2,13 +2,13 @@ html{
 	height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'ibm_plex_sans_thai_loopedRg';
+    font-family: 'db_adman_xregular';
 }
 
 #content{
 	 /*overflow-x: hidden;*/
-    font-size: 14px;
-    font-family: 'ibm_plex_sans_thai_loopedRg';
+    font-size: 18px;
+    font-family: 'db_adman_xregular';
     line-height: 1.4;
     background-color: #2A2A2A;
     color: #fff;
@@ -30,7 +30,7 @@ html{
 	height: 150px;
 	float: right;
 	margin-top: 40px;
-	font-size: 20px;
+	font-size: 24px;
 }
 .button-curve{
 	width: auto;
@@ -41,7 +41,7 @@ html{
 	border-color: #000;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 22px;
 }
 .box-two{
 	float: left;
@@ -56,15 +56,15 @@ html{
 	margin-bottom: 20px;
 	padding-left: 0px;
 	margin-left: 0px;
-	font-size: 20px
+	font-size: 24px
 }
 .text-head{
-	/*font-size: 30px;*/
+	/*font-size: 34px;*/
 	font-weight: bold;
 	margin-bottom: 20px;
 }
 .text-span{
-	font-size: 18px;
+	font-size: 22px;
 }
 .box-three{
 	float: left;
@@ -88,7 +88,7 @@ html{
 	margin: 6px;
 }
 .text-line{
-	font-size: 16px;
+	font-size: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: -150px;
@@ -97,7 +97,7 @@ html{
 }
 .contact{
 	float: right;
-	font-size: 20px;
+	font-size: 24px;
 	color: #000;
 	margin-left: 20px;
 	margin-top: 40px;
@@ -115,7 +115,7 @@ html{
 	background: #000;
 }
 .support{
-	font-size: 16px;
+	font-size: 20px;
 	color: #fff;
 	text-align-last: left;
 	margin-left: 30px;
@@ -126,7 +126,7 @@ html{
 	margin-left: 20px;
 }
 .text-center{
-	font-size: 30px;
+	font-size: 34px;
 	text-align-last: center;
 	margin: 10px 0px;
 
@@ -145,7 +145,7 @@ html{
 .box-curve{
  	width: auto;
 	height: 30px;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
 	color: #fff;
 	margin: 10px;
@@ -273,12 +273,12 @@ html{
 }
 .text-span-center{
 	text-align-last: center;
-	font-size: 20px;
+	font-size: 24px;
 	margin: 10px 0px;
 }
 .text-span-center-small{
 	text-align-last: center;
-	font-size: 14px;
+	font-size: 18px;
 	margin: 10px 0px;
 }
 .circle-bullet{
@@ -294,7 +294,7 @@ html{
 }
 .text-left{
 	text-align-last: left;
-	font-size: 20px;
+	font-size: 24px;
 }
 .img-icon-small{
 	width: 30px;
@@ -307,12 +307,12 @@ html{
 }
 .text-span-small{
 	margin-left: 100px;
-	font-size: 20px;
+	font-size: 24px;
 	margin-top: 20px;
 
 }
 .text-center-right{
-	font-size: 25px;
+	font-size: 29px;
 	text-align: center;
 	margin: 10px 0px;
 
@@ -333,35 +333,35 @@ html{
 	margin-left: 20px;
 }
 .text-header-rights{
-	font-size: 14px;
+	font-size: 18px;
 	margin-left: 20px;
-	font-family: 'ibm_plex_sans_thai_loopedbold';
+	font-family: 'db_adman_xbold';
 	/*font-weight: bold;*/
 	letter-spacing: 2px;
 }
 .text-header-right{
-	font-size: 14px;
+	font-size: 18px;
 	margin-left: 40px;
-	font-family: 'ibm_plex_sans_thai_loopedbold';
+	font-family: 'db_adman_xbold';
 	letter-spacing: 2px;
 }
 .text-header-left{
-	font-size: 14px;
-	font-family: 'ibm_plex_sans_thai_loopedbold';
+	font-size: 18px;
+	font-family: 'db_adman_xbold';
 	letter-spacing: 2px;
 }
 .text-title-left{
-	font-size: 35px;
-	font-family: 'ibm_plex_sans_thai_loopedbold';
+	font-size: 40px;
+	font-family: 'db_adman_xbold';
 }
 .text-title-right{
-	font-size: 35px;
+	font-size: 40px;
 	margin-left: 150px;
-	font-family: 'ibm_plex_sans_thai_loopedbold';
+	font-family: 'db_adman_xbold';
 }
 .text-title-center{
-	font-size: 16px;
-	font-family: 'ibm_plex_sans_thai_loopedRg';
+	font-size: 20px;
+	font-family: 'db_adman_xregular';
 }
 .last-title{
 	/*margin-top: 300px;*/
@@ -370,7 +370,7 @@ html{
 	margin-right: 20px;
 }
 .text-last-small{
-	font-family: 'ibm_plex_sans_thai_loopedRg';
+	font-family: 'db_adman_xregular';
 	font-size: 10px;
 }
 .box1{
@@ -419,7 +419,7 @@ html{
 
 	}
 	.box-right h2{
-		font-size: 35px;
+		font-size: 40px;
 	}
 	.box-inside{
 		margin-top: 30px;
@@ -427,7 +427,7 @@ html{
 	.button-curve{
 		width: 250px;
 	    height: 80px;
-	    font-size: 25px;
+	    font-size: 29px;
 	    margin-bottom: 30px;
 	}
 	.images img {
@@ -445,7 +445,7 @@ html{
 		height: 40px;
 		background:#000;
 		border-radius: 50%;
-		z-index: 2px;
+		z-index: 2;
 		position: absolute;
 		margin-left: 200px;
 		margin-top: -40px;
@@ -457,7 +457,7 @@ html{
 	  margin: 1px;
 	}*/
 	.text-line{
-		font-size: 16px;
+		font-size: 20px;
 		margin-top: 20px;
 		margin-bottom: 10px;
 		margin-left: -150px;
@@ -481,7 +481,7 @@ html{
 	    padding-top: 3%;
 	}
 	.txtmore {
-	    font-size: 24px;
+	    font-size: 28px;
 	}
 	.swiper-wrapper {
 	    padding-bottom: 60px;
@@ -503,7 +503,7 @@ html{
 		margin-top: 10px;
 	}
 	.contact{
-		font-size: 20px;
+		font-size: 24px;
 		margin-top: 180px;
 	}
 	.contact img{
@@ -520,7 +520,7 @@ html{
 		margin-left: 20px;
 	}
 	.text-center{
-		font-size: 30px;
+		font-size: 34px;
 		text-align-last: center;
 	}
 	.box-curve{
@@ -532,7 +532,7 @@ html{
 		/*margin-left: -5px; */
 	}
 	.nav-menu a{
-		font-size: 25px;
+		font-size: 29px;
 		margin-left: 20px;
 	}
 	.overlay {
@@ -556,11 +556,11 @@ html{
 		margin: 6px;
 	}
 	.text-span-center{
-		font-size: 20px;
+		font-size: 24px;
 		margin: 10px 0px;
 	}
 	.text-span-center-small{
-		font-size: 14px;
+		font-size: 18px;
 		margin: 10px 0px;
 	}
 	.left-boxes{
@@ -587,7 +587,7 @@ html{
 		position:absolute;
 	}
 	.text-center-right{
-		font-size: 25px;
+		font-size: 29px;
 		text-align: left;
 		margin-left: 100px;
 
@@ -619,18 +619,18 @@ html{
 		width: 10%;
 	}
 	.text-header-rights{
-		font-size: 20px;
+		font-size: 24px;
 		margin-left: 20px;
-		font-family: 'ibm_plex_sans_thai_loopedbold';
+		font-family: 'db_adman_xbold';
 		letter-spacing: 4px;
 	}
 	.text-header-right{
-		font-size: 20px;
+		font-size: 24px;
 		margin-left: 40px;
 		letter-spacing: 4px;
 	}
 	.text-header-left{
-		font-size: 20px;
+		font-size: 24px;
 		letter-spacing: 4px;
 	}
 	.text-title-left{
@@ -641,10 +641,10 @@ html{
 		margin-left: 220px;
 	}
 	.text-title-center{
-		font-size: 28px;
+		font-size: 32px;
 	}
 	.text-last-small{
-		font-size: 20px;
+		font-size: 24px;
 	}
 	.box1{
 		margin-left: 250px;

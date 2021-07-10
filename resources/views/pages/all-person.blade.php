@@ -1,108 +1,331 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>all-person</title>
+    <title>AllPerson</title>
 
-    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+  <body>
 
 <section id="header">
-
+  
 </section>
 
 <section id=content>
-    <div class="container">
+    <div class="bg container">
+        <div class="row">
 
-        <div class="row ">
-
-            <div class="text-center">DEFENDERS LIST</div>
-
-            <div class="nav-menu">
-                <div class="text-span">Many Skill, Different and Creative</div>
+            <div class="icon_zone">
+                  <div class="txt">
+                      <h2>MORE DEFENDERS FROM &TIVIRUS</h2>
+                  </div>
             </div>
 
-            <div class="col-3">
+            <div class="text-subtitle">Many Skill, Different and Creative</div>
 
-                <div class="box-hover">
+              <div class="container">
+                            <div class="row">
+                                <div class="bubble-conrol container">
 
-                    <div class="img-logo img-fluid image"><img class="circle" src="assets/images/test.jpg">
-                        <div class="overlay-curve">
-                            <div class="icon">
-                                <div class="box-curve"><a href="">SEE PROJECT</a></div>
-                                <div class="box-curve"><a href="">SEE PROFILE</a></div>
+                                    <div class="bubble-1">
+                                        <img class="img-responsive" src="assets/images/bubble.png">
+                                    </div>
+                                    <div class="bubble-2">
+                                        <img class="img-responsive" src="assets/images/bubble2.png">
+                                    </div>
+                                     <div class="bubble-3">
+                                        <img class="img-responsive" src="assets/images/bubble3.png">
+                                    </div>
+                                   <div class="bubble-4">
+                                        <img class="img-responsive" src="assets/images/bubble4.png">
+                                    </div>
+                                     <div class="bubble-5">
+                                        <img class="img-responsive" src="assets/images/bubble5.png">
+                                    </div> 
+                                </div>
+
+                            </div>
+                        </div>
+          
+                   <!--  <a href="">
+
+                        <div class="txt-right">VIEW ALL
+                            <div class="line-gradient"></div>
+                        </div>
+                    </a> -->
+
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves img-responsive" ></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves"></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves"></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves"></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves"></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                            
+                                    <div class="tran-curves"></div>
+
+                                    <div id="change-img">
+                                
+                                      <a href="" >
+                                      
+                                         <!--  <img class="img-curves img-fluid gradient-curves change-img" src="assets/images/test.jpg"> -->
+                                            <img class="img-curves img-fluid gradient-curves copy-img" src="assets/images/fake.png" />
+                                            <img class="img-curves img-fluid gradient-curves real-img" src="assets/images/test.jpg" />
+                                      </a>
+
+                                    </div>
+
+                                    
+                                
+
+                                      <div class="paint-icon">
+                                              <a href="">
+                                                <img src="assets/images/paint.png">
+                                              </a>
+                                                              
+                                      </div>
+                                      <div class="txt-under">
+
+                                      <div class="text-spans">TUNCHANOK CHERNGKEEREE</div>
+                                      <div class="text-spans">Designer</div>
+
+                                      </div>
+
+                                </div>
+
+                                
+
+
                             </div>
                         </div>
 
-                        <div class="museum-icon-big">
-                            <a href="xxx">
-                                <img src="assets/images/museum.png">
-                            </a>
-
-                            <div class="text-line">
-                                Phattranit Asawalertpanya
+                    </div>
+                </div>
+            </div>
+            <section class="sec-follow-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="txt-follow">
+                                    FOLLOW US ON
+                                </div>
+                                <div class="icon-follow">
+                                    <span class="icon-pad">
+                                <img src="assets/images/icon-facebook.png" alt="">
+                            </span>
+                                    <span class="icon-pad">
+                                <img src="assets/images/icon-ig.png" alt="">
+                            </span>
+                                    <span class="icon-pad">
+                                <img src="assets/images/icon-tw.png" alt="">
+                            </span>
+                                    <span class="icon-pad">
+                                <img src="assets/images/icon-youtube.png" alt="">
+                            </span>
+                                </div>
+                                <div class="txt-showcase">
+                                    SHOWCASE BY
+                                </div>
+                                <div class="icon-follow">
+                                    <div class="padcase">
+                                        <span class="showcase-pad">
+                                    <img src="assets/images/par1.png" alt="">
+                                </span>
+                                        <span class="showcase-pad2">
+                                    <img src="assets/images/par2.png" alt="">
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="txt-web">
+                                    <span class="txt-w-h">WEB & INTERACTIVE MEDIA</span>
+                                    <br>FACULTY OF INFORMATION & COMMUNICATION TECHNOLOGY, SILPAKORN UNIVERSITY
+                                </div>
                             </div>
                         </div>
                     </div>
+            </section>
 
-                </div>
-
-            </div>
-
-
-        </div> <!--row -->
-
-
-    </div> <!-- container -->
-
-</section>
-
-
-
-
-<section id="footer">
-    <div class="support">
-        SUPPORT BY :
-        <img src="assets/images/museum.png">
-        <img src="assets/images/museum.png">
-        <img src="assets/images/museum.png">
+        </div>       
     </div>
-
 </section>
 
 
-
-
-
-</body>
+  </body>
 </html>

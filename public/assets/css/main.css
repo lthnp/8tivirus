@@ -12,11 +12,11 @@ html {
 
 body {
     overflow-x: hidden;
-    font-size: 14px;
+    font-size: 18px;
     /*font-family: 'Prompt';*/
     line-height: 1.4;
     background-color: #ffffff;
-    font-family: 'ibm_plex_sans_thai_loopedRg';
+    font-family: 'db_adman_xregular';
     /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -144,7 +144,7 @@ img {
 
 .name-txt-h {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 40px;
     color: rgba(254, 189, 205, 0.8);
     line-height: 47px;
     padding-bottom: 8px;
@@ -185,7 +185,7 @@ img {
 .name-eng {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     color: #ffffff;
     line-height: 16px;
 }
@@ -193,7 +193,7 @@ img {
 .name-thai {
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
     line-height: 26px;
     padding-bottom: 8px;
@@ -202,7 +202,7 @@ img {
 .name-app {
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
 }
@@ -214,7 +214,7 @@ img {
 .txt-tec {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: #EA396B;
     padding-bottom: 15px;
@@ -223,7 +223,7 @@ img {
 .txt-front {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
@@ -234,7 +234,7 @@ img {
 .txt-data {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
@@ -246,7 +246,7 @@ img {
 .txt-other {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
@@ -258,7 +258,7 @@ img {
 .txt-front2 {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
@@ -272,7 +272,7 @@ img {
     height: 44px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     letter-spacing: 0.1em;
     color: #F31A73;
@@ -285,7 +285,7 @@ img {
 }
 
 .icon-play {
-    font-size: 15px;
+    font-size: 19px;
     /* padding-top: 8px; */
 }
 
@@ -314,7 +314,7 @@ img {
 .txt-func1 {
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
     padding-bottom: 33px;
@@ -323,7 +323,7 @@ img {
 .txt-func2 {
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
     padding-bottom: 57px;
@@ -332,7 +332,7 @@ img {
 .txt-func3 {
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
 }
@@ -372,7 +372,7 @@ img {
 .txt-teacher {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
 }
@@ -412,7 +412,7 @@ img {
 .position {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: #B8248E;
     padding-top: 12px;
@@ -421,7 +421,7 @@ img {
 .my-name {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
     color: #FFFFFF;
     padding-top: 5px;
@@ -430,7 +430,7 @@ img {
 .my-e-mail {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.5);
     padding-top: 5px;
@@ -441,7 +441,7 @@ img {
     height: 44px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -500,7 +500,7 @@ img {
 .my-code {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
     color: #FFFFFF;
 }
@@ -508,7 +508,7 @@ img {
 .my-code-dis {
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     color: #FFFFFF;
     padding-top: 16px;
@@ -523,7 +523,7 @@ img {
     height: 44px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -551,7 +551,7 @@ img {
     height: 44px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     letter-spacing: 0.1em;
     color: #F31A73;
@@ -574,7 +574,7 @@ img {
     height: 44px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 19px;
     letter-spacing: 0.1em;
     border: 1px solid #F31A73;
@@ -627,7 +627,7 @@ img {
 .txt-h-persona {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: #EA396B;
     padding-top: 25px;
@@ -636,7 +636,7 @@ img {
 .txt-persona {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 22px;
     color: #FFFFFF;
 }
@@ -644,7 +644,7 @@ img {
 .txt-background {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 28px;
     color: #FFFFFF;
 }
@@ -652,7 +652,7 @@ img {
 .txt-behav {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 21px;
     color: #FFFFFF;
     padding-top: 5px;
@@ -661,7 +661,7 @@ img {
 .txt-h-n-persona {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: #EA396B;
     padding-bottom: 10px;
@@ -685,7 +685,7 @@ img {
 .txt-inter {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
@@ -710,7 +710,7 @@ img {
     text-align: right;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.8);
     position: relative;
@@ -767,7 +767,7 @@ img {
 }
 
 .txt21 {
-    font-size: 18px;
+    font-size: 22px;
     color: #ffffff;
     font-weight: 500;
     font-style: normal;
@@ -775,7 +775,7 @@ img {
 }
 
 .txt21dis {
-    font-size: 12px;
+    font-size: 16px;
     color: #ffffff;
 }
 
@@ -792,7 +792,7 @@ img {
     /* font-family: IBM Plex Sans; */
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.045em;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
@@ -802,7 +802,7 @@ img {
 .txt-showcase {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.045em;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
@@ -836,7 +836,7 @@ img {
 }
 
 .txt-web {
-    font-size: 15px;
+    font-size: 19px;
     text-align: center;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.6);
@@ -859,6 +859,7 @@ img {
     word-break: normal !important;
     word-wrap: normal !important;
     white-space: pre !important;
+    font-size: 14px !important;
 }
 #comment-form{
     width: 100% !important;
@@ -874,7 +875,7 @@ img {
     border-radius: 20px;
 }
 .text-arear {
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     padding: 35px 31px;
 }
