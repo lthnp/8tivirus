@@ -58,4 +58,9 @@ class Student extends Model
     {
         return $this->hasOne('App\Models\Project', 'id', 'project_id');
     }
+
+    public function resources()
+    {
+        return $this->hasMany('App\Models\FreeResource');
+    }
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>coming-soon</title>
+    <title>Coming Soon — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
 
     <link rel="stylesheet" href="{{ asset('assets/fonts/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -15,15 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        @font-face {
-            font-family: 'IBM Plex Sans Thai';
-            src: url({{ asset('assets/fonts/IBM-Plex-Sans-Thai/IBMPlexSansThai-Regular.ttf') }});
-        }
-        * {
-            font-family: 'IBM Plex Sans Thai';
-        }
-    </style>
 </head>
 
 <body>
@@ -51,4 +42,5 @@
         </div>
     </div>
 </body>
+@include('include.analysis')
 </html>

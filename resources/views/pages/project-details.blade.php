@@ -7,18 +7,21 @@
     <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
     <title>{{ $list->nickname }} {{ $list->name_th }} by {{ $list->students[0]->firstname.' '.$list->students[0]->lastname }}{{ count($list->students) > 1 ? ', '.$list->students[1]->firstname.' '.$list->students[1]->lastname : '' }}{{ count($list->students) > 2 ? ', '.$list->students[2]->firstname.' '.$list->students[2]->lastname : '' }} — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
 
+    @include('include.header')
     @include('include.header-real')
 </head>
 
 <body>
     <main class="wrapper bg">
+        <a href="{{ route('project.index') }}">
         <section>
             <div class="box-lodo-main">
-                <a href="">
-                    <img class="img-logo-small" src="https://www.ict.su.ac.th/func/&amp;tivirus/assets/images/logo.png">
-                </a>
+                <img class="img-logo-small" src="https://www.ict.su.ac.th/func/&amp;tivirus/assets/images/logo.png">
             </div>
         </section>
+        </a>
+
+        @include('include.bubble')
 
         <section class="sec-appilcation">
             <div class="container">
@@ -55,13 +58,23 @@
                         @include('include.tech')
                     </div>
                     <div class="col-8">
+                        <div class="display-block overflow-hidden">
+                            <div class="box-name">
+                                <div class="video-tutoral">
+                                    <iframe width="100%" height="350px" border-radius="20px"
+                                            src="https://www.youtube.com/embed/{{ $list->showreel_url_code }}"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            id="demo_vdo" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                         <div class="txt-tec">ความสามารถ</div>
                         <div class="display-block overflow-hidden">
                             <div class="w-25 float-left">
                                 <div class="pb-4">
                                     <button id="func1" type="button" class="buttom-time"><i class="fas fa-play icon-play"></i><i class="fas fa-play icon-play"></i>
-                                        {{ $list->detail->func1_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func1_start/60) }}
-                                        :{{ $list->detail->func1_start%60 > 10 ? '' : '0' }}{{ $list->detail->func1_start%60 }}
+                                        {{ $list->detail->func1_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func1_start/60) }}:{{ $list->detail->func1_start%60 > 10 ? '' : '0' }}{{ $list->detail->func1_start%60 }}
                                     </button>
                                 </div>
                             </div>
@@ -75,8 +88,7 @@
                             <div class="w-25 float-left">
                                 <div class="pb-4">
                                     <button id="func2" type="button" class="buttom-time"><i class="fas fa-play icon-play"></i><i class="fas fa-play icon-play"></i>
-                                        {{ $list->detail->func2_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func2_start/60) }}
-                                        :{{ $list->detail->func2_start%60 > 10 ? '' : '0' }}{{ $list->detail->func2_start%60 }}
+                                        {{ $list->detail->func2_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func2_start/60) }}:{{ $list->detail->func2_start%60 > 10 ? '' : '0' }}{{ $list->detail->func2_start%60 }}
                                     </button>
                                 </div>
                             </div>
@@ -90,8 +102,7 @@
                             <div class="w-25 float-left">
                                 <div class="pb-4">
                                     <button id="func3" type="button" class="buttom-time"><i class="fas fa-play icon-play"></i><i class="fas fa-play icon-play"></i>
-                                        {{ $list->detail->func3_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func3_start/60) }}
-                                        :{{ $list->detail->func3_start%60 > 10 ? '' : '0' }}{{ $list->detail->func3_start%60 }}
+                                        {{ $list->detail->func3_start/60 > 10 ? '' : '0' }}{{ intval($list->detail->func3_start/60) }}:{{ $list->detail->func3_start%60 > 10 ? '' : '0' }}{{ $list->detail->func3_start%60 }}
                                     </button>
                                 </div>
                             </div>
@@ -152,13 +163,13 @@
                             <div class="my-e-mail">
                                 {{ $student->email }}
                             </div>
-{{--                            <a class="text-decoration-none" href="">--}}
-{{--                                <div class="box-buttom-profile">--}}
-{{--                                    <div class="buttom-profile">--}}
-{{--                                        VIEW PROFILE--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </a>--}}
+                            <a class="text-decoration-none" href="{{ route('defender.show', [$student->sid, $student->nickname]) }}">
+                                <div class="box-buttom-profile">
+                                    <div class="buttom-profile">
+                                        VIEW PROFILE
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     @empty
                         <p>ไม่พบข้อมูล</p>
@@ -586,6 +597,7 @@
         }
     </script>
 
+    @include('include.analysis')
 </body>
 
 <script>

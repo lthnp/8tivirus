@@ -58,6 +58,7 @@ body{
 }
 
 .txt {
+    position: relative;
     color: #FEBDCD;
     z-index: 1;
 }
@@ -327,9 +328,9 @@ body{
     height: 350px;
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
     background: rgb(249, 161, 27);
     background: linear-gradient(90deg, rgba(249, 161, 27, 0.5) 0%, rgba(255, 21, 105, 0.5) 35%, rgba(57, 119, 210, 0.5) 100%);
+    z-index: 1 !important;
 }
 .tran-curves:hover{
 	display: none;
@@ -939,10 +940,11 @@ body{
         position: absolute;
         width: 50%;
         height: 36%;
-        background: url(../images/txt.png)no-repeat top center;
+        background: url('../images/txt.png')no-repeat top center;
         right: 228px;
        /* right: 448px;*/
         bottom: 13px;
+        z-index: 0;
         /* bottom: 7px; */
     }
     .icon_zone:before {
@@ -1230,7 +1232,7 @@ body{
 	}
 	.box-left{
 		width: 50%;
-		margin-left: 150px;
+		/*margin-left: 150px;*/
 	}
 	.box-right{
 		width: 50%;

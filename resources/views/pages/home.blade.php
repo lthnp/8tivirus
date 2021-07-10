@@ -285,4 +285,5 @@
     <script src="{{ asset('assets/js/delay.js') }}"></script>
 
   </body>
+  @include('include.analysis')
 </html>

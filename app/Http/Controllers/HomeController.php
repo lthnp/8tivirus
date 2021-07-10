@@ -15,4 +15,12 @@ class HomeController extends Controller
         }
     }
 
+    public function contact(){
+        return view('pages.contacts');
+    }
+
+    public function insider(){
+        return view('pages.insider');
+    }
+
 }

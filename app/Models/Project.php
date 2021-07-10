@@ -27,9 +27,17 @@ class Project extends Model
     ];
 
     protected $appends = [
+        'showreel_url_code',
         'demo_url_code',
         'category_name'
     ];
+
+    public function getShowreelUrlCodeAttribute()
+    {
+        $url = $this->showreel_url;
+        $code = explode("/", $url);
+        return $code[3];
+    }
 
     public function getDemoUrlCodeAttribute()
     {
