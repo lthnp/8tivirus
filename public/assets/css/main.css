@@ -13,9 +13,10 @@ html {
 body {
     overflow-x: hidden;
     font-size: 14px;
-    font-family: 'Prompt';
+    /*font-family: 'Prompt';*/
     line-height: 1.4;
     background-color: #ffffff;
+    font-family: 'ibm_plex_sans_thai_loopedRg';
     /* font-family: 'Poppins', sans-serif; */
 }
 

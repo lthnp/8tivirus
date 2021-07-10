@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB15-DETAIL</title>
+    <meta name="description" content="&TIVIRUS Senior Project Showcase — FUNC/ 2021 จุลนิพนธ์ของนักศึกษาวิชาเอกเว็บและสื่อโต้ตอบ คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากร ปีการศึกษา 2563 ในแนวคิด เพิ่มภูมิดิจิทัล ผสมสร้างส่งมอบคุณค่า" />
+    <title>{{ $list->nickname }} {{ $list->name_th }} by {{ $list->students[0]->firstname.' '.$list->students[0]->lastname }}{{ count($list->students) > 1 ? ', '.$list->students[1]->firstname.' '.$list->students[1]->lastname : '' }}{{ count($list->students) > 2 ? ', '.$list->students[2]->firstname.' '.$list->students[2]->lastname : '' }} — &TIVIRUS SHOWCASE *FUNC/ 2021</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 
@@ -110,7 +111,7 @@
                             </div>
                             <div class="w-75 float-left">
                                 <div class="txt-func1 pt-2">
-                                    {{ $list->detail->func1 }}
+                                    {{ $list->detail->func3 }}
                                 </div>
                             </div>
                         </div>
@@ -165,13 +166,13 @@
                             <div class="my-e-mail">
                                 {{ $student->email }}
                             </div>
-                            <a class="text-decoration-none" href="">
-                                <div class="box-buttom-profile">
-                                    <div class="buttom-profile">
-                                        VIEW PROFILE
-                                    </div>
-                                </div>
-                            </a>
+{{--                            <a class="text-decoration-none" href="">--}}
+{{--                                <div class="box-buttom-profile">--}}
+{{--                                    <div class="buttom-profile">--}}
+{{--                                        VIEW PROFILE--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a>--}}
                         </div>
                     @empty
                         <p>ไม่พบข้อมูล</p>
@@ -304,9 +305,10 @@
                 </div>
                 <div class="row">
                     <div class="col col-lg-2 ">
-                        <div class="photo-persona" style="width: 100px; height: 100px">
+                        <div class="photo-persona">
                             <img class="rounded-circle"
-                                 style="height: 100%; object-fit: cover;"
+                                 width="100"
+                                 height="100"
                                  src="{{ asset($list->persona->img) }}" alt="{{ $list->persona->name }}">
                         </div>
                     </div>
@@ -532,57 +534,7 @@
             </section>
         @endif
 
-
-        <section class="sec-follow-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="txt-follow">
-                            FOLLOW US ON
-                        </div>
-                        <div class="icon-follow">
-                            <span class="icon-pad">
-                                <a class="text-decoration-none" href="">
-                                   <img src="{{ asset('/assets/images/icon-facebook.png')}} " alt="funcslash-fb">
-                            </a>
-                            </span>
-                            <span class="icon-pad">
-                                <a class="text-decoration-none" href="">
-                                    <img src="{{ asset('/assets/images/icon-ig.png') }}" alt="funcslash-ig">
-                                </a>
-                            </span>
-                            <span class="icon-pad">
-                                <a class="text-decoration-none" href="">
-                                    <img src="{{ asset('/assets/images/icon-tw.png') }}" alt="funcslash-twitter">
-                                </a>
-                            </span>
-                            <span class="icon-pad">
-                                <a class="text-decoration-none" href="">
-                                    <img src="{{ asset('/assets/images/icon-youtube.png') }}" alt="funcslash-youtube">
-                                </a>
-                            </span>
-                        </div>
-                        <div class="txt-showcase">
-                            SHOWCASE BY
-                        </div>
-                        <div class="icon-follow">
-                            <div class="padcase">
-                                <span class="showcase-pad">
-                                    <img src="{{ asset('/assets/images/par1.png') }}" alt="silpakorn">
-                                </span>
-                                <span class="showcase-pad2">
-                                    <img src="{{ asset('/assets/images/par2.png') }}" alt="ict-silpakorn">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="txt-web">
-                            <span class="txt-w-h">WEB & INTERACTIVE MEDIA</span>
-                            <br>FACULTY OF INFORMATION & COMMUNICATION TECHNOLOGY, SILPAKORN UNIVERSITY
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('include.footer')
 
     </main>
 

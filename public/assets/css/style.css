@@ -2,13 +2,16 @@ html{
 	height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'ibm_plex_sans_thai_loopedRg';
 }
+
 #content{
 	 /*overflow-x: hidden;*/
     font-size: 14px;
-    font-family: 'IBM Plex Sans Thai';
+    font-family: 'ibm_plex_sans_thai_loopedRg';
     line-height: 1.4;
-    background-color: #ffffff;
+    background-color: #2A2A2A;
+    color: #fff;
 }
 .box-one{
 	float: left;
@@ -332,37 +335,33 @@ html{
 .text-header-rights{
 	font-size: 14px;
 	margin-left: 20px;
-	font-family: 'IBM Plex Sans Thai';
-	font-weight: bold;
+	font-family: 'ibm_plex_sans_thai_loopedbold';
+	/*font-weight: bold;*/
 	letter-spacing: 2px;
 }
 .text-header-right{
 	font-size: 14px;
 	margin-left: 40px;
-	font-family: 'IBM Plex Sans Thai';
-	font-weight: bold;
+	font-family: 'ibm_plex_sans_thai_loopedbold';
 	letter-spacing: 2px;
 }
 .text-header-left{
 	font-size: 14px;
-	font-family: 'IBM Plex Sans Thai';
-	font-weight: bold;
+	font-family: 'ibm_plex_sans_thai_loopedbold';
 	letter-spacing: 2px;
 }
 .text-title-left{
 	font-size: 35px;
-	font-family: 'IBM Plex Sans Thai';
-	font-weight: bold;
+	font-family: 'ibm_plex_sans_thai_loopedbold';
 }
 .text-title-right{
 	font-size: 35px;
 	margin-left: 150px;
-	font-family: 'IBM Plex Sans Thai';
-	font-weight: bold;
+	font-family: 'ibm_plex_sans_thai_loopedbold';
 }
 .text-title-center{
 	font-size: 16px;
-	font-family: 'IBM Plex Sans Thai';
+	font-family: 'ibm_plex_sans_thai_loopedRg';
 }
 .last-title{
 	/*margin-top: 300px;*/
@@ -371,6 +370,7 @@ html{
 	margin-right: 20px;
 }
 .text-last-small{
+	font-family: 'ibm_plex_sans_thai_loopedRg';
 	font-size: 10px;
 }
 .box1{
@@ -621,8 +621,7 @@ html{
 	.text-header-rights{
 		font-size: 20px;
 		margin-left: 20px;
-		font-family: 'IBM Plex Sans Thai';
-		font-weight: bold;
+		font-family: 'ibm_plex_sans_thai_loopedbold';
 		letter-spacing: 4px;
 	}
 	.text-header-right{

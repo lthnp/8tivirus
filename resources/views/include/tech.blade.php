@@ -85,7 +85,7 @@
     </div>
 @endforelse
 </div>
-<div class="txt-data pt-3">DATA COLLCTION</div>
+<div class="txt-data pt-3">DATA COLLECTION</div>
 <div class="overflow-hidden">
 @forelse($list->techs as $tech)
     @if($tech->type == 3)

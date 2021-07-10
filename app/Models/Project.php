@@ -27,7 +27,8 @@ class Project extends Model
     ];
 
     protected $appends = [
-        'demo_url_code'
+        'demo_url_code',
+        'category_name'
     ];
 
     public function getDemoUrlCodeAttribute()
@@ -35,6 +36,20 @@ class Project extends Model
         $demo_url = $this->demo_url;
         $demo_url_code = explode("/", $demo_url);
         return $demo_url_code[3];
+    }
+
+    public function getCategoryNameAttribute()
+    {
+        if($this->category == 1){
+            $category_name = 'Life-Quality Improvements';
+        } else if($this->category == 2) {
+            $category_name = 'Digital Technology Improves Well-Being';
+        } else if($this->category == 3) {
+            $category_name = 'Creative Media Supporting Digital Education';
+        } else if($this->category == 4) {
+            $category_name = 'Supporting Businesses in Growing';
+        }
+        return $category_name;
     }
 
     // Project Detail

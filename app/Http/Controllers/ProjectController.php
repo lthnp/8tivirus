@@ -15,37 +15,51 @@ class ProjectController extends Controller
         parent::__construct();
     }
 
-    public function index(){
-        $lists = Project::with([
-            'students',
-        ])->get();
-        return view('pages.test', compact('lists'));
+    public function index(Request $request){
+        $category = $request->get('category');
+        if($category){
+            $lists = Project::where(['category'=>$category])->with([
+                'students',
+            ])->get();
+        } else {
+            $lists = Project::with([
+                'students',
+            ])->get();
+        }
+        return view('pages.all-project', compact('lists', 'category'));
     }
 
     public function show($code){
-        $list = Project::where(['code' => $code])
-            ->with([
-                'detail',
-                'techs',
-                'screenshots',
-                'persona',
-                'students',
-                'reaction' => function($query){
-                    $query->where($this->data);
-                    $query->first();
-                },
-                'comment' => function($query){
-                    $query->where($this->data);
-                    $query->first();
-                },
-            ])
-            ->first();
-        if(!empty($list->react)){
-            $react = 1;
-        } else {
-            $react = 0;
+        try {
+            $list = Project::where(['code' => $code])
+                ->with([
+                    'detail',
+                    'techs',
+                    'screenshots',
+                    'persona',
+                    'students',
+                    'reaction' => function($query){
+                        $query->where($this->data);
+                        $query->first();
+                    },
+                    'comment' => function($query){
+                        $query->where($this->data);
+                        $query->first();
+                    },
+                    'noComment' => function($query){
+                        $query->where($this->data);
+                        $query->first();
+                    },
+                ])
+                ->first();
+
+            if (!empty($list)){
+                return view('pages.project-details', compact('list'));
+            } else {
+                return redirect()->route('project.index');
+            }
+        } catch (\Exception $e) {
         }
-        return view('pages.project-details', compact('list', 'react'));
     }
 
     public function comment(CommentRequest $request){
