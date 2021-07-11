@@ -27,10 +27,18 @@ class Project extends Model
     ];
 
     protected $appends = [
+        'portrait_url_code',
         'showreel_url_code',
         'demo_url_code',
         'category_name'
     ];
+
+    public function getPortraitUrlCodeAttribute()
+    {
+        $url = $this->portrait_vdo_url;
+        $code = explode("/", $url);
+        return $code[3];
+    }
 
     public function getShowreelUrlCodeAttribute()
     {

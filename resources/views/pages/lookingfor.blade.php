@@ -20,15 +20,15 @@
             <div class=" col-12 text-center">
                 <h1 class="txt ibm-bold pt-4 pb-4 w-100">LOOKING FOR ?</h1>
             </div>
-{{--            <div class=" col-12 back-pad">--}}
-{{--                <a href="{{ route('index') }}">--}}
-{{--                    <div class="txt-back">--}}
-{{--                        <img src="{{ asset('assets/images/back.png') }}">--}}
-{{--                        BACK TO HOME PAGE--}}
-{{--                        <div class="line-gradient-back"></div>--}}
-{{--                    </div>--}}
-{{--                </a>--}}
-{{--            </div>--}}
+            <div class=" col-12 back-pad">
+                <a href="{{ route('index') }}">
+                    <div class="txt-back">
+                        <img src="{{ asset('assets/images/back.png') }}">
+                        BACK TO HOME PAGE
+                        <div class="line-gradient-back"></div>
+                    </div>
+                </a>
+            </div>
 
             <!-- icon -->
             <div class=" col-12 pt-3 pb-3  d-flex flex-md-row flex-column  justify-content-center align-items-center ">

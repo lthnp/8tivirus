@@ -23,13 +23,13 @@
                 <h2>FREE RESOURCE</h2>
             </div>
         </div>
-{{--        <a class="col-2" href="{{ route('index') }}">--}}
-{{--            <div class="txt-back">--}}
-{{--                <img src="{{ asset('assets/images/back.png') }}">--}}
-{{--                BACK TO HOME PAGE--}}
-{{--                <div class="line-gradient-back"></div>--}}
-{{--            </div>--}}
-{{--        </a>--}}
+        <a class="col-2" href="{{ route('index') }}">
+            <div class="txt-back">
+                <img src="{{ asset('assets/images/back.png') }}">
+                BACK TO HOME PAGE
+                <div class="line-gradient-back"></div>
+            </div>
+        </a>
         <div class="col-10"></div>
         <div class="col-12 overflow-hidden">
             <div class="row">

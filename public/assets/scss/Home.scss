@@ -18,17 +18,17 @@ body{
     outline:none;
     float:right;
     cursor:pointer;
-    
+
   }
 }
 
 .close-overlay{
     color: white;
     font-size: 200%;
-    font-weight: 80%;
+    font-weight: 80;
     text-align: right;
     // margin-right: 5%;
-    
+
 }
 
 .over-lay button{
@@ -49,22 +49,22 @@ body{
   background-color: rgba(0, 0, 0, 0.7);
   transition: all .6s ease-in-out;
   z-index: 888;
-  
+
   .cross{
     width: 100%;
     float:right;
     cursor:pointer;
     margin-left: 20%;
   }
-  
-  
+
+
 
   .menu {
     width: auto;
     height: auto;
     background: none;
     list-style-type: none;
-    
+
   }
   .menu__link {
     color: #FEBDCD;
@@ -84,8 +84,8 @@ body{
     top: 40%;
     left: 63%;
     text-align: right;
-    
-    
+
+
     li{
       width: auto;
       height: auto;
@@ -94,18 +94,18 @@ body{
       text-align: right;
       transition:all .5s;
       a{
-        
+
         width: auto;
         height: auto;
         font-size:18px;
         text-align: right;
         line-height: 250%;
         font-weight: normal;
-        text-decoration: none;  
-        color: white; 
+        text-decoration: none;
+        color: white;
         opacity: 0.5;
         cursor: pointer;
-        transition: all 0.4s ease; 
+        transition: all 0.4s ease;
         cursor: pointer;
         &:hover {
           color: white;
@@ -115,7 +115,7 @@ body{
       }
     }
   }
-  
+
 
 
 
@@ -125,8 +125,8 @@ body{
     justify-content: space-evenly;
     top: 25%;
     left: 20%;
-    
-    
+
+
     li{
       width: auto;
       height: auto;
@@ -134,7 +134,7 @@ body{
       opacity:0;
       transition:all .5s;
       a{
-        
+
         width: auto;
         height: auto;
         font-size:32px;
@@ -142,7 +142,7 @@ body{
         transition:all .3s;
         text-align: left;
         line-height: 200%;
-        
+
         &:hover{
           color:Cornsilk;
         }
@@ -164,7 +164,7 @@ body{
   opacity:1;
   visibility: visible;
   top:0;
-  
+
   li:nth-of-type(1){
     animation: show-list .8s forwards 1s ease-out;
   }
@@ -213,7 +213,7 @@ body{
   text-decoration: none;
   font-size: 400%;
   transition: all 0.4s ease;
- 
+
        &:hover {
          opacity: 0.5;
        }
@@ -271,7 +271,7 @@ footer {
   transform: rotate(-23.99deg);
   margin-top: -5%;
   margin-left: -5%;
-  
+
 }
 .flatscreen{
   z-index: 9;
@@ -291,11 +291,11 @@ footer {
 //   }
 //   50% {
 //       transform: translateY(-20%);
-      
+
 //   }
 //   100% {
 //       transform: translateY(0);
-      
+
 //   }
 // }
 .icon_zone_menubar:before {
@@ -303,7 +303,7 @@ footer {
   position: absolute;
   width: 70%;
   height: 100%;
-  background: url('../images/txt.png')no-repeat top center;    
+  background: url('../images/txt.png')no-repeat top center;
   right: 50%;
   bottom: -12px;
   z-index: -9;
@@ -327,7 +327,7 @@ footer {
   position: absolute;
   width: 30%;
   height: 100%;
-  background: url('../images/txt.png')no-repeat top center;    
+  background: url('../images/txt.png')no-repeat top center;
   right: 30%;
   bottom: -12px;
 }
@@ -399,7 +399,7 @@ footer {
 
 .icon_zone_lineP2 {
   display: flex;
-  
+
   flex-direction: column;
   position: relative;
   padding: 10px 10px 10px;
@@ -418,7 +418,7 @@ footer {
 
 .icon_zone_lineP3 {
   display: flex;
-  
+
   flex-direction: column;
   position: relative;
   padding: 10px 10px 10px;
@@ -432,7 +432,7 @@ footer {
   100% {
       transform: translateX(20%)
   }
-} 
+}
 // -------- page 2 --------
 
 
@@ -441,7 +441,7 @@ footer {
   position: absolute;
   width: 50%;
   height: 100%;
-  background: url('../images/txt.png')no-repeat top center;    
+  background: url('../images/txt.png')no-repeat top center;
   right: 50%;
   align-items: center;
   bottom: -12px;
@@ -468,7 +468,7 @@ footer {
   position: absolute;
   width: 40%;
   height: 100%;
-  background: url('../images/txt.png')no-repeat top center;    
+  background: url('../images/txt.png')no-repeat top center;
   right: 38%;
   align-items: center;
   bottom: -12px;
@@ -554,7 +554,7 @@ footer {
   color: #FEBDCD;
 /* identical to box height */
 
-  
+
   letter-spacing: 0.15em;
 }
 
@@ -580,7 +580,7 @@ footer {
   float: left;
   font-weight: 500;
   font-size: 14px;
-  line-height: 30px;    
+  line-height: 30px;
   letter-spacing: 0.15em;
   font-style: normal;
   margin-left: 3%;
@@ -590,10 +590,10 @@ footer {
   text-align: center;
   width: 60%;
   height: auto;
-  
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 40px;  
+  line-height: 40px;
   letter-spacing: 0.15em;
   font-style: normal;
   float: left;
@@ -604,10 +604,10 @@ footer {
   text-align: center;
   width: 60%;
   height: auto;
-  
+
   font-weight: 500;
   font-size: 14px;
-   line-height: 30px;  
+   line-height: 30px;
   letter-spacing: 0.15em;
   font-style:normal;
   float: left;
@@ -661,7 +661,7 @@ footer {
   height:99%;
   width:59%;
   top:0;
-  left:0; 
+  left:0;
   background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
   border-radius: 20px;
 }
@@ -684,7 +684,7 @@ footer {
   height:99%;
   width:70%;
   top:0;
-  left:0; 
+  left:0;
   background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
   border-radius: 20px;
 }
@@ -697,7 +697,7 @@ footer {
   height: auto;
   left: 55%;
   top: 25%;
-  
+
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -706,7 +706,7 @@ footer {
   text-transform:uppercase;
 /* identical to box height */
 
-  
+
   letter-spacing: 0.15em;
 }
 
@@ -717,7 +717,7 @@ footer {
   height: auto;
   left: 55.5%;
   top: 37%;
-  
+
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -725,7 +725,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 /* identical to box height */
 
-  
+
   letter-spacing: 0.15em;
 }
 .letsee{
