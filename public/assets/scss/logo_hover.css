@@ -1,0 +1,40 @@
+.bg-menu, .bg-logo {
+  height: 40rem;
+}
+
+footer img {
+  opacity: 0.4;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer img p {
+  color: #000000;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+.text_menu p {
+  padding: 2%;
+}
+
+.dropbtn:hover, .dropbtn-2:hover {
+  opacity: 0.5;
+}
+
+.dropdown-content {
+  display: none;
+  overflow: auto;
+}
+
+.dropdown-content p {
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+/*# sourceMappingURL=logo_hover.css.map */

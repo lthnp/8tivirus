@@ -1,0 +1,17 @@
+.link_menu {
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.link_menu:hover {
+  color: white;
+  opacity: 1;
+}
+/*# sourceMappingURL=Link_menu.css.map */

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900&display=swap");
+ 
+ $font-01: "Barlow", sans-serif;
+ 
+ /*
+ $bg-01: #364e68;
+ $bg-02: #446d8c;
+ $bg-03: #5788a0;
+ $bg-04: #73a5b5;
+ */
+ 
+ $bg-01: #000000;
+ $bg-02: #000000;
+ $bg-03: #000000;
+ $bg-04: #000000;
+ 
+ @mixin md {
+   @media screen and (max-width: 1920) {
+     @content;
+   }
+ }
+ 
+ @mixin sm {
+   @media screen and (max-width: 767px) {
+     @content;
+   }
+ }
+ 
+ body {
+   margin: 0;
+   font-family: $font-01;
+   background-color: #f1f3f7;
+   -webkit-tap-highlight-color: transparent;
+ }
+ 
+//  ul {
+//    margin: 0;
+//    padding: 0;
+ 
+//    li {
+//      list-style: none;
+//    }
+//  }
+ 
+//  a {
+//    text-decoration: none;
+//    color: white;
+//  }
+ .wrapper{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ /* Navigation */
+ nav.bar{
+   /* Nav Bar */
+   .menubar {
+     width: 100%;
+     height: auto;
+     position: relative;
+     top: 0;
+     display: flex;
+     align-items: center;
+    //  justify-content: space-between;
+     padding: 0 40px;
+     box-sizing: border-box;
+     background: none;
+ 
+     @include sm {
+       height: 60px;
+       padding: 0 20px;
+     }
+ 
+     /* Logo */
+     .home {
+       margin: 3%;
+       font-size: 200%;
+       font-weight: 400;
+       color: $bg-02;
+       transition: all 0.4s ease;
+ 
+       &:hover {
+         opacity: 0.5;
+       }
+     }
+     
+     /* Icons */
+     .icons {
+       display: flex;
+       
+       /* Icon Menu Hamburguer */
+
+       .icon-menu {
+         display: flex;
+         width: 30px;
+         height: 30px;
+         z-index: 2;
+         position: relative;
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+         margin-left: 6em;
+ 
+         span {
+           background-color: $bg-02;
+           width: 50px;
+           height: 4px;
+           position: absolute;
+           display: flex;
+           justify-content: flex-end;
+           transition: all 0.2s ease;
+           right: 0;
+           border-radius: 5px;
+ 
+           &:before,
+           &:after {
+             position: absolute;
+             content: "";
+             width: 100%;
+             height: 100%;
+             background-color: $bg-02;
+             border-radius: 5px;
+           }
+ 
+           &:before {
+             transform: translateY(-10px);
+             transition: all 0.3s 0.1s ease;
+           }
+           &:after {
+             transform: translateY(10px);
+             transition: all 0.3s 0.2s ease;
+           }
+         }
+ 
+         &:hover {
+           span {
+             width: 40px;
+ 
+             &:before {
+               width: 50px;
+             }
+ 
+             &:after {
+               width: 30px;
+             }
+           }
+         }
+ 
+         /* Icon Close */
+         &.icon-closed {
+           justify-content: center;
+ 
+           span {
+             background-color: white;
+             justify-content: center;
+             width: 0px;
+             right: initial;
+             opacity: 0.5;
+             transition: all 0.6s ease;
+ 
+             &:before,
+             &:after {
+               width: 30px;
+               background-color: white;
+             }
+ 
+             &:before {
+               transform: rotate(45deg);
+             }
+             &:after {
+               transform: rotate(-45deg);
+             }
+           }
+ 
+           &:hover {
+             span {
+               width: 0;
+               opacity: 1;
+ 
+               @include sm {
+                 &:before {
+                   transform: rotate(45deg);
+                 }
+                 &:after {
+                   transform: rotate(-45deg);
+                 }
+               }
+             }
+           }
+         }
+       }
+       
+       /* Secondary Icons */
+       .secondary-icons {
+         display: flex;
+         flex-wrap: wrap;
+ 
+         .icon-second {
+           width: 30px;
+           height: 30px;
+           margin: 0 10px;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           padding: 5px;
+           
+           @include sm {
+             margin: 0 5px;
+           }
+           
+           &:last-child {
+             margin-right: 30px;
+             @include sm {
+               margin-right: 15px;
+             }
+           }
+ 
+           &:hover {
+             transform: translateY(-5px);
+             opacity: 0.5;
+             @include sm {
+               transform: translateY(0px);
+               opacity: 1;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ .Logo_sponser{
+        width: auto;
+        height: auto;
+        position: relative;
+
+    }
+ article {
+    position: relative;
+    text-align: left;
+    color: $bg-02;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 5%;
+    float:left;
+ }
+    img {
+      opacity:0.4;
+      transition: all 0.4s ease;
+      width: 8%;
+      height: 8%;  
+    
+    h1 {
+      font-size: 20px;
+      font-weight:500;
+    }
+    
+    p {
+      color: $bg-03;
+    }
+    
+    &:hover {
+      opacity:1;
+    }
+}
+
+ 
