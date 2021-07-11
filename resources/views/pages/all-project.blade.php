@@ -29,13 +29,13 @@
                 </div>
             </div>
 
-            <a href="{{ route('index') }}">
-                <div class="txt-back">
-                    <img src="{{ asset('assets/images/back.png') }}">
-                    BACK TO HOME PAGE
-                    <div class="line-gradient-back"></div>
-                </div>
-            </a>
+{{--            <a href="{{ route('index') }}">--}}
+{{--                <div class="txt-back">--}}
+{{--                    <img src="{{ asset('assets/images/back.png') }}">--}}
+{{--                    BACK TO HOME PAGE--}}
+{{--                    <div class="line-gradient-back"></div>--}}
+{{--                </div>--}}
+{{--            </a>--}}
 
             @include('include.bubble')
 

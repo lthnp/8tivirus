@@ -37,7 +37,7 @@
                                         LOOKING FOR ?
                                     </a>
                                 </li>
-                                <li class="menu__item" ><a class="menu__link" href="#" role="menuitem" tabindex="-1">
+                                <li class="menu__item" ><a class="menu__link" href="{{ route('resource.index') }}" role="menuitem" tabindex="-1">
                                         FREE RESOURCES</a>
                                 </li>
                                 <li class="menu__item" ><a class="menu__link" href="{{ route('insider') }}" role="menuitem" tabindex="-1">

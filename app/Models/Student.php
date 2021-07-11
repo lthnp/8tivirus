@@ -35,7 +35,7 @@ class Student extends Model
         'interview_url_code'
     ];
 
-    public function getRoleNAmeAttribute()
+    public function getRoleNameAttribute()
     {
         if($this->role == 1){
             $role_name = 'Developer';

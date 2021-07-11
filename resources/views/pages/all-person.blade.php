@@ -31,13 +31,13 @@
 
             <div class="text-subtitle">Many Skill, Different and Creative</div>
 
-            <a href="{{ route('index') }}">
-                <div class="txt-back">
-                    <img src="{{ asset('assets/images/back.png') }}">
-                    BACK TO HOME PAGE
-                    <div class="line-gradient-back"></div>
-                </div>
-            </a>
+{{--            <a href="{{ route('index') }}">--}}
+{{--                <div class="txt-back">--}}
+{{--                    <img src="{{ asset('assets/images/back.png') }}">--}}
+{{--                    BACK TO HOME PAGE--}}
+{{--                    <div class="line-gradient-back"></div>--}}
+{{--                </div>--}}
+{{--            </a>--}}
             @include('include.bubble')
 
             <div class="container">
@@ -57,8 +57,8 @@
                                 </a>
                             </div>
                             <div class="txt-under">
-                                <div class="text-spans">{{ $list->firstname }} {{ $list->lastname }}</div>
-                                <div class="text-spans">{{ $list->role_name }}</div>
+                                <div class="texts-title-span">{{ $list->firstname }} {{ $list->lastname }}</div>
+                                <div class="texts-span">{{ $list->role_name }}</div>
                             </div>
                         </div>
                     @empty

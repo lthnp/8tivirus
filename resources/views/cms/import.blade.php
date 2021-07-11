@@ -87,6 +87,9 @@
                                     <th>Title</th>
                                     <th>Img</th>
                                     <th>Download URL</th>
+                                @elseif($type == 'wallpaper')
+                                    <th>Title</th>
+                                    <th>Img</th>
                                 @endif
                             </tr>
                             </thead>
@@ -126,6 +129,9 @@
                                         <td>{{ $list['title'] }}</td>
                                         <td>{{ $list['img'] }}</td>
                                         <td>{{ $list['download_url'] }}</td>
+                                    @elseif($type == 'wallpaper')
+                                        <td>{{ $list['title'] }}</td>
+                                        <td>{{ $list['download_url'] }}</td>
                                     @endif
                                 </tr>
                             @endforeach
@@ -152,6 +158,7 @@
                             <option value="screenshot">screenshot</option>
                             <option value="student">student</option>
                             <option value="free resource">free resource</option>
+                            <option value="wallpaper">wallpaper</option>
                         </select>
                         <h5 class="mt-3">file</h5>
                         <input type="file" name="file" class="form-control @error('file') is-invalid @enderror">

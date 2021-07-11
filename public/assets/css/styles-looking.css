@@ -55,7 +55,7 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-.img-set {
+* .img-set {
     height: 400px;
     width: 100%;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@
     border-radius: 20px 0px 0px 20px;
 }
 
-.img-set-person {
+* .img-set-person {
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -71,7 +71,7 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-.img-set-2 {
+* .img-set-2 {
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -79,7 +79,7 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-.img-set-person-2 {
+* .img-set-person-2 {
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -194,10 +194,10 @@
 .line-under2::before {
     content: "";
     position: absolute;
-    width: 61px;
+    width: 70px;
     height: 3px;
     background: linear-gradient( 45deg, rgb(57, 119, 210) 0%, rgb(249, 161, 27) 65%, rgb(255, 21, 105) 100%);
-    left: 60px;
+    left: 70px;
     bottom: 35px;
 }
 
@@ -211,7 +211,7 @@
     width: 70px;
     height: 3px;
     background: linear-gradient( 45deg, rgb(57, 119, 210) 0%, rgb(249, 161, 27) 65%, rgb(255, 21, 105) 100%);
-    left: 70px;
+    left: 80px;
     bottom: 35px;
 }
 
@@ -757,4 +757,35 @@
 .button-curve:hover{
     color: #fff;
     background: #F31A73;
+}
+
+.sec-project-gallery {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    padding-bottom: 60px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 60px;
+    height: 7px;
+    border-radius: 4.5px;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    border: 1px solid white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    width: 60px;
+    height: 7px;
+    background-color: #F31A73;
+    border-radius: 4.5px;
+    border: none;
 }

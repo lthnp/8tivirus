@@ -9,6 +9,7 @@ body {
 
 .container {
   max-width: 100%;
+  height: 100%;
 }
 
 .container .menu {
@@ -26,7 +27,6 @@ body {
   font-size: 200%;
   font-weight: 80%;
   text-align: right;
-  margin-right: 15%;
 }
 
 .over-lay button {
@@ -37,7 +37,7 @@ body {
 }
 
 .over-lay {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: -100%;
   padding: 5em;
@@ -46,8 +46,8 @@ body {
   -webkit-transform-origin: top;
           transform-origin: top;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   z-index: 888;
 }
 
@@ -70,8 +70,8 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 32px;
-  -webkit-transition: all .25s ease-out;
-  transition: all .25s ease-out;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
 }
 
 .over-lay .menulink_home ul {
@@ -118,7 +118,7 @@ body {
   opacity: 1;
 }
 
-ul {
+.over-lay ul {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +130,7 @@ ul {
   left: 20%;
 }
 
-ul li {
+.over-lay ul li {
   width: auto;
   height: auto;
   list-style: none;
@@ -139,7 +139,7 @@ ul li {
   transition: all .5s;
 }
 
-ul li a {
+.over-lay ul li a {
   width: auto;
   height: auto;
   font-size: 32px;
@@ -150,8 +150,16 @@ ul li a {
   line-height: 200%;
 }
 
-ul li a:hover {
+.over-lay ul li a:hover {
   color: Cornsilk;
+}
+
+.scrolldownhere {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 92%;
+  left: 45%;
 }
 
 .show {
@@ -164,38 +172,38 @@ ul li a:hover {
 }
 
 .show li:nth-of-type(1) {
+  -webkit-animation: show-list .8s forwards 0.2s ease-out;
+          animation: show-list .8s forwards 0.2s ease-out;
+}
+
+.show li:nth-of-type(2) {
+  -webkit-animation: show-list .8s forwards 0.4s ease-out;
+          animation: show-list .8s forwards 0.4s ease-out;
+}
+
+.show li:nth-of-type(3) {
+  -webkit-animation: show-list .8s forwards 0.6s ease-out;
+          animation: show-list .8s forwards 0.6s ease-out;
+}
+
+.show li:nth-of-type(4) {
+  -webkit-animation: show-list .8s forwards 0.8s ease-out;
+          animation: show-list .8s forwards 0.8s ease-out;
+}
+
+.show li:nth-of-type(5) {
   -webkit-animation: show-list .8s forwards 1s ease-out;
           animation: show-list .8s forwards 1s ease-out;
 }
 
-.show li:nth-of-type(2) {
+.show li:nth-of-type(6) {
   -webkit-animation: show-list .8s forwards 1.2s ease-out;
           animation: show-list .8s forwards 1.2s ease-out;
 }
 
-.show li:nth-of-type(3) {
+.show li:nth-of-type(7) {
   -webkit-animation: show-list .8s forwards 1.4s ease-out;
           animation: show-list .8s forwards 1.4s ease-out;
-}
-
-.show li:nth-of-type(4) {
-  -webkit-animation: show-list .8s forwards 1.6s ease-out;
-          animation: show-list .8s forwards 1.6s ease-out;
-}
-
-.show li:nth-of-type(5) {
-  -webkit-animation: show-list .8s forwards 1.8s ease-out;
-          animation: show-list .8s forwards 1.8s ease-out;
-}
-
-.show li:nth-of-type(6) {
-  -webkit-animation: show-list .8s forwards 2s ease-out;
-          animation: show-list .8s forwards 2s ease-out;
-}
-
-.show li:nth-of-type(7) {
-  -webkit-animation: show-list .8s forwards 2.2s ease-out;
-          animation: show-list .8s forwards 2.2s ease-out;
 }
 
 @-webkit-keyframes show-list {
@@ -281,7 +289,7 @@ footer {
   z-index: 9;
   position: absolute;
   background: none;
-  width: auto;
+  width: 40%;
   height: auto;
   position: absolute;
   display: -webkit-box;
@@ -325,7 +333,6 @@ footer {
   position: absolute;
   width: 352px;
   height: 232px;
-  left: 23.0%;
   top: 75%;
   background: -webkit-gradient(linear, left top, left bottom, from(#2A2A2A), to(rgba(42, 42, 42, 0)));
   background: linear-gradient(180deg, #2A2A2A 0%, rgba(42, 42, 42, 0) 100%);
@@ -457,11 +464,34 @@ footer {
   width: 50px;
   height: 4px;
   background: linear-gradient(45deg, #3977D2 0%, #F9A11B 65%, #FF1569 100%);
-  right: 35%;
+  right: 60%;
   top: 30px;
 }
 
 .icon_zone_lineP2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 10px 10px 10px;
+  height: auto;
+}
+
+.icon_zone_lineP3:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(45deg, #3977D2 0%, #F9A11B 65%, #FF1569 100%);
+  right: 22%;
+  top: 35px;
+}
+
+.icon_zone_lineP3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,6 +563,43 @@ footer {
           animation-iteration-count: infinite;
 }
 
+.icon_zone_page3:before {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background: url("../images/txt.png") no-repeat top center;
+  right: 38%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -12px;
+  z-index: -2;
+}
+
+.icon_zone_page3 {
+  letter-spacing: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 10px 10px 10px;
+  height: auto;
+}
+
+.icon_zone_page3:before {
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .sec-4project {
   padding-bottom: 100px;
 }
@@ -559,17 +626,17 @@ footer {
 }
 
 .txt-staff {
+  color: rgba(255, 255, 255, 0.6);
   padding: 15px 0px 0px 14px;
+  line-height: 35px;
 }
-
+.photomoile {
+    overflow: hidden;
+    position: relative;
+}
 .photomoile img {
-  width: 100%;
-  height: auto;
-}
-
-.photomoile :hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  display: block;
+  width: 80%;
 }
 
 .lookingforicon img {
@@ -586,6 +653,7 @@ footer {
   text-align: center;
   width: auto;
   height: auto;
+  margin-left: 3%;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -612,7 +680,7 @@ footer {
 .icon-pad1 {
   position: relative;
   text-align: center;
-  width: auto;
+  width: 60%;
   height: auto;
   float: left;
   font-weight: 500;
@@ -626,11 +694,11 @@ footer {
 .icon-pad2 {
   position: relative;
   text-align: center;
-  width: auto;
+  width: 60%;
   height: auto;
   font-weight: 500;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: 0.15em;
   font-style: normal;
   float: left;
@@ -640,7 +708,7 @@ footer {
 .icon-pad3 {
   position: relative;
   text-align: center;
-  width: auto;
+  width: 60%;
   height: auto;
   font-weight: 500;
   font-size: 14px;
@@ -666,6 +734,27 @@ footer {
   border-radius: 20px;
 }
 
+.videofilterhome {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.videoStaffPick {
+  width: 75%;
+  height: 97%;
+  border-radius: 2vw;
+  position: absolute;
+    left: 5px;
+    top: 5px;
+  z-index: 98;
+}
+
+.mockupbest1, .mockupbest2, .mockupbest3, .mockupbest4 {
+    position: relative;
+  z-index: 99;
+}
+
 .photomoile1 {
   margin-top: -10%;
   position: relative;
@@ -683,6 +772,29 @@ footer {
   content: "";
   height: 99%;
   width: 59%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
+  border-radius: 20px;
+}
+
+.photomoilehome {
+  margin-top: -10%;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: auto;
+}
+
+.photomoilehome img {
+  display: block;
+}
+
+.photomoilehome::after {
+  position: absolute;
+  content: "";
+  height: 99%;
+  width: 70%;
   top: 0;
   left: 0;
   background: linear-gradient(253.21deg, rgba(249, 161, 27, 0.2) 14.24%, rgba(255, 21, 105, 0.2) 63.41%, rgba(41, 180, 230, 0.2) 91.37%);
@@ -741,7 +853,7 @@ footer {
 
 .bg {
   z-index: -99;
-  background: url("/images/FINAL_DESIGN_APPROVE.png") no-repeat top center;
+  background: url(/images/FINAL_DESIGN_APPROVE.png) no-repeat top center;
   height: 100%;
 }
 /*# sourceMappingURL=Home.css.map */

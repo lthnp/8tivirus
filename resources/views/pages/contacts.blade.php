@@ -33,9 +33,13 @@
 
             <div class="container txt-center">
 
-                <div class="row">
-
-                    <div class="text-span-center">SOCIAL NETWORKS <img src="{{ asset('assets/images/circle.png') }}"></div>
+                <div class="row pt-5">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm text-span-center">SOCIAL NETWORKS <img src="{{ asset('assets/images/circle.png') }}"></div>
+                            <div class="col-sm text-span-center">EXHIBITION & SHOWCASE <img src="{{ asset('assets/images/circle.png') }}"></div>
+                        </div>
+                    </div>
 
                     <div class="col-sm">
 
@@ -60,9 +64,10 @@
                     </div>
 
 
+
                     <div class="col-sm">
 
-                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/extract/">ICTSUWEB#14 - extract</a></div>
+                        <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/extract/">ICTSUWEB#14 - ex;tract</a></div>
 
                         <div class="txt-span-center-small"><a href="https://www.ict.su.ac.th/func/shortcut/">ICTSUWEB#13 - SHORTCUT 13.5</a></div>
 

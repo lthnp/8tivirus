@@ -89,7 +89,7 @@
                         </div>
                         <div class="text-spans">{{ $list->project->name }}</div>
                         <div class="text-spans">{{ $list->project->name_th }}</div>
-                        <a href="{{ route('project.show', $list->project->code) }}">
+                        <a href="{{ route('project.show', $list->project->code) }}" class="mr-2">
                             <button class="button-curve">PROJECT DETAIL</button>
                         </a>
                     </div>
@@ -154,8 +154,8 @@
                                             </a>
                                         </div>
                                         <div class="txt-under">
-                                            <div class="text-spans">{{ $rand->firstname }} {{ $rand->lastname }}</div>
-                                            <div class="text-spans">{{ $rand->role_name }}</div>
+                                            <div class="texts-title-span">{{ $rand->firstname }} {{ $rand->lastname }}</div>
+                                            <div class="texts-span">{{ $rand->role_name }}</div>
                                         </div>
                                     </div>
                                 @empty

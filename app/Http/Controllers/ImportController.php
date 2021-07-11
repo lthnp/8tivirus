@@ -9,6 +9,7 @@ use App\Imports\ProjectImport;
 use App\Imports\ProjectTechImport;
 use App\Imports\ScreenshotImport;
 use App\Imports\StudentImport;
+use App\Imports\WallpaperImport;
 use App\Models\FreeResource;
 use App\Models\Persona;
 use App\Models\Project;
@@ -16,6 +17,7 @@ use App\Models\ProjectDetail;
 use App\Models\ProjectTech;
 use App\Models\Screenshot;
 use App\Models\Student;
+use App\Models\Wallpaper;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Maatwebsite\Excel\Facades\Excel;
@@ -61,6 +63,9 @@ class ImportController extends Controller
             if($type == 'free resource'){
                 $listsImport = Excel::toArray(new FreeResourceImport, request()->file('file'));
             }
+            if($type == 'wallpaper'){
+                $listsImport = Excel::toArray(new WallpaperImport, request()->file('file'));
+            }
 
             $lists = $listsImport[0];
 
@@ -103,6 +108,9 @@ class ImportController extends Controller
         if($type == 'free resource') {
             $model = new FreeResource();
         }
+        if($type == 'wallpaper') {
+            $model = new Wallpaper();
+        }
 
         foreach ($lists as $list){
             if($type == 'free resource'){
@@ -116,7 +124,13 @@ class ImportController extends Controller
                     array_push($fail, $list);
                 }
             } else {
-                $element = Project::where('code', $list['code'])->first(['id']);
+                if($type == 'wallpaper'){
+                    $input = $list;
+                    $model::create($input);
+                    array_push($success, $list);
+                } else {
+                    $element = Project::where('code', $list['code'])->first(['id']);
+                }
             }
 
             if (!empty($element)){
@@ -134,7 +148,7 @@ class ImportController extends Controller
                     $model::create($input);
                     array_push($success, $list);
                 } else {
-                    if($type != 'free resource'){
+                    if($type != 'free resource' && $type != 'wallpaper'){
                         array_push($fail, $list);
                     }
                 }

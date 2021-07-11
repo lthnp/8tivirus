@@ -1,0 +1,68 @@
+/* follow-us */
+.sec-follow-us {
+    padding: 10% 0% 10% 0%;
+}
+
+.txt-follow {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.045em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 16px;
+}
+
+.txt-showcase {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.045em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    /* padding-bottom: 16px; */
+    padding-top: 50px;
+    padding-bottom: 9px;
+}
+
+.icon-follow {
+    text-align: center;
+}
+
+.icon-pad {
+    padding-right: 18px;
+}
+
+.showcase-pad img {
+    width: 5%;
+}
+
+.showcase-pad2 img {
+    width: 17%;
+}
+
+.padcase {
+    padding-right: 23px;
+}
+
+.txt-web {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.txt-w-h {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(to right, #FF1569, #3977D2);
+    background-clip: text;
+    -webkit-background-clip: text;
+     color: transparent;
+	-webkit-text-fill-color: transparent;
+}
